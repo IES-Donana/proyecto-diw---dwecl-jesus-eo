@@ -1,0 +1,295 @@
+/*Para los menu laterales de las páginas(aside) usar la clase común class="nav-lateral" y utilizar el mismo número de grillas por contenedor envolvente principales.
+Para los títulos utilizar la clase class="titulo-test"*/
+/* h3 font.size 28px bebasneue p font.size 18px*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   /* color: white;*/
+}
+/*---Etiquetas generales---*/
+button {
+    border-radius: 40px;
+    font-family: 'Roboto', sans-serif;
+    opacity: 50%;
+}
+a {
+    text-decoration: none;
+    color: rgba(21, 213, 166, 1);
+    font-family: 'roboto';
+}
+h1 {
+    color: rgba(21, 213, 166, 1);
+   /*  font-variant: small-caps; */
+}
+/*títulos páginas*/
+.titulo-test {
+    font-size: 50px;
+    font-family: 'bebas neue';
+}
+/*-Menu Lateral Para todas las páginas-*/
+.nav-lateral {
+    border: 1px solid blue;
+    grid-column: 1/4;
+    grid-row: 1/11;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-lateral > a {
+    border-bottom: 3px solid rgba(21, 213, 166, 1);
+    padding-bottom: 10px;
+}
+/* -----PÁGINA PRINCIPAL----- */ /**colocar la img */
+#container-principal {
+    display: flex ;
+    flex-direction: column;
+    height: 100vh;
+    color: white;
+}
+/*-Navegación-*/
+/* Calculo el alto con respecto al del contenedor padre*/
+#nav-contprin {
+    display: flex;
+    height: 80px;
+   
+    background-color: rgba(80, 80, 80, 1);
+}
+#nav-frase {
+    display: flex;
+    align-items: center;
+    word-wrap: break-word;/*Preguntar cuando encojo mucho se sale el texto del contenedor*/
+    width: 60%;
+    margin-left: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+#nav-enlaces {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-around ;
+    width: 40%;
+    font-family: 'Roboto', sans-serif;
+}
+#nav-enlaces > a {
+    color: white;
+}
+/*-Cuerpo-*/
+#cuerpo-contprin {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(10,70px);
+    background-image:url(img/fondoPrincipal.jpg);
+    background-size: 100% 100%;
+}
+/*Imagen */
+#img-cuerpo-contprin {
+    border-radius: 60%;
+    height: 90%;
+    grid-column: 2/6;
+    grid-row: 3/8;
+}
+/*Sección central*/
+#section-contprin {
+    grid-column:7/12 ;
+    grid-row: 3/9;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+/*texto*/
+#section-contprin > article {
+    height: 68%;
+    width: 80%;
+    font-family: 'Roboto';
+}
+.parrafo1-sect-contprin {
+    font-size: 25px;
+}
+.spanp1 {
+    font-family: 'Bebas Neue';
+    color: rgba(21, 213, 166, 1);
+    font-size: 30px;
+}
+.parrafo2-sect-contprin {
+    font-size: 20px;
+}
+/*Botones*/
+#btn-section-contprin {
+    display: flex;
+    justify-content: space-between;
+    height: 15%;
+    padding: 5px;
+    width: 80%;
+}
+.far {
+    color: white;
+    grid-column: 6/7;
+    grid-row: 9/10;
+    font-size: 50px;
+    
+}
+/*-------MIS PROYECTOS------- */
+#container-proyectos {
+    background-image: url(img/—Pngtree—black\ business\ atmosphere\ business\ card_1099742.jpg);
+    display: grid;
+    grid-template-columns: repeat(18,1fr);
+    grid-template-rows: /*repeat(10,72px)*/ repeat(10,1fr);
+    height: 100vh; 
+}
+#titulo-pro {
+    text-align: center;
+    grid-column: 9/14;
+    grid-row: 2/3;
+}
+/*-Cuerpo-*/
+#main-contpro {
+     grid-column: 5/18;
+     grid-row: 3/11;
+     display: grid;
+     grid-template-columns: repeat(12, 1fr);
+     grid-template-rows: repeat(17, 1fr);
+}
+#proyecto1 {
+    grid-row: 1/9;
+    grid-column: 1/13;
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(13, 21px);
+}
+
+#proyecto1 > h3 {
+    text-align: center;
+    grid-column: 10/14 ;
+    grid-row: 3/4 ;
+    font-size: 28px;
+    font-family: 'bebas neue';
+    color: rgba(21, 213, 166, 1);
+}
+#img-pro1 {
+    height: 100%;
+    border-radius: 20px;
+    grid-row: 3/12;
+    grid-column: 2/7;
+}
+#p-pro1 {
+    font-size: 18px;
+    font-family: 'roboto';
+    grid-row: 5/11;
+    grid-column: 9/15;
+}
+#a-pro1 {
+    grid-column: 9/11;
+    grid-row: 11/12;
+}
+#proyecto2 {
+    grid-row: 9/18;
+    grid-column: 1/13;
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(13, 23px);
+}
+#proyecto2 > h3 {
+    text-align: center;
+    grid-row: 3/12;
+    grid-column: 2/7;
+    font-size: 28px;
+    font-family: 'bebas neue';
+    color: rgba(21, 213, 166, 1);
+}
+#p-pro2 {
+    font-size: 18px;
+    font-family: 'roboto';
+    grid-row: 5/11;
+    grid-column: 2/8;
+}
+#a-pro2 {
+    grid-row: 11/12;
+    grid-column: 2/4;
+}
+#img-pro2 {
+    border-radius: 20px;
+    grid-row: 3/12;
+    grid-column: 9/15;
+    height: 100%;
+    width: 100%;
+}
+/*--------TESTIMONIOS----------*/
+#container-testimonios {
+    display: grid;
+    grid-template-columns: repeat(18,1fr);
+    grid-template-rows: /*repeat(10,72px)*/ repeat(10,1fr);
+    height: 100vh; 
+    height: 100vh;
+    background-image: url(img/—Pngtree—black\ business\ atmosphere\ business\ card_1099742.jpg);
+}
+
+/*-Título-*/
+.titulo-test {
+    grid-column: 8/15;
+    grid-row: 2/3;
+    text-align: center;
+}
+/*-Cuerpo-*/
+#cuerpo-contest {
+    grid-column: 5/18;
+    grid-row: 3/11;
+    display:flex;
+    flex-direction: column;
+}
+/*Clase para todos los párrafosde testimonio*/
+.p-test {
+    font-size: 18px;
+    grid-row: 2/10;
+    grid-column: 7/15;
+    font-family: 'roboto';
+}
+.spn-test {
+    font-size: 20px;
+}
+#testimonio1 {
+    height: 33.3%;
+    display: grid;
+    grid-template-columns:repeat(15, 1fr) ;
+    grid-template-rows: repeat(10, 19px);
+}
+
+.img-test1 {
+    height: 95%;
+    width: 100%;
+    border-radius: 50%;
+    grid-row: 1/11;
+    grid-column: 2/5;
+    margin-bottom: 10px;
+}
+#testimonio2 {
+    height: 33.3%;
+    display: grid;
+    grid-template-columns:repeat(15, 1fr) ;
+    grid-template-rows: repeat(10, 19px);
+    
+}
+.img-test2 {
+    height: 95%;
+    width: 100%;
+    border-radius: 50%;
+    grid-row: 1/11;
+    grid-column: 2/5;
+}
+#testimonio3 {
+    height: 33.3%;
+    display: grid;
+    grid-template-columns:repeat(15, 1fr) ;
+    grid-template-rows: repeat(10, 19px);
+    
+    
+}
+.video-test {
+    height: 95%;
+    width: 100%;
+    border-radius: 50%;
+    grid-row: 1/11;
+    grid-column: 2/5;
+}
