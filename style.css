@@ -5,6 +5,7 @@ Para los títulos utilizar la clase class="titulo-test"*/
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+   /* overflow-y: hidden;*/
    /* color: white;*/
 }
 /*---Etiquetas generales---*/
@@ -27,21 +28,22 @@ h1 {
     font-size: 50px;
     font-family: 'bebas neue';
 }
-/*-Menu Lateral Para todas las páginas-*/
+/*-Menu Lateral Para todas las páginas-*//**Efecto**/
 .nav-lateral {
-    border: 1px solid blue;
     grid-column: 1/4;
     grid-row: 1/11;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    background: rgba(69, 37, 122, 0.3);
+    cursor: default;
 }
 .nav-lateral > a {
     border-bottom: 3px solid rgba(21, 213, 166, 1);
     padding-bottom: 10px;
 }
-/* -----PÁGINA PRINCIPAL----- */ /**colocar la img */
+/* -----PÁGINA PRINCIPAL----- */ /****colocar la img *****/
 #container-principal {
     display: flex ;
     flex-direction: column;
@@ -140,6 +142,20 @@ h1 {
 .far:hover {
     color: rgba(21, 213, 166, 1);
 }
+@media only all and (max-width:1300px) {
+    .parrafo2-sect-contprin {
+        font-size: 15px;
+    }
+    .parrafo1-sect-contprin {
+        font-size: 18px;
+    }
+    #nav-enlaces {
+        font-size: 14px;
+    }
+    #nav-frase > p {
+        font-size: 14px;
+    }
+}
 /*-------MIS PROYECTOS------- */
 #container-proyectos {
     background-image: url(img/—Pngtree—black\ business\ atmosphere\ business\ card_1099742.jpg);
@@ -191,9 +207,13 @@ h1 {
     grid-row: 5/11;
     grid-column: 9/15;
 }
+/*boton*/
 #a-pro1 {
     grid-column: 9/11;
     grid-row: 11/12;
+}
+#a-pro1:hover {
+    font-size: 20px;
 }
 #proyecto2 {
     grid-row: 9/18;
@@ -220,6 +240,10 @@ h1 {
     grid-row: 11/12;
     grid-column: 2/4;
 }
+/*boton*/
+#a-pro2:hover {
+    font-size: 20px;
+}
 #img-pro2 {
     border-radius: 20px;
     grid-row: 3/12;
@@ -227,7 +251,7 @@ h1 {
     height: 100%;
     width: 100%;
 }
-/*--------TESTIMONIOS----------*/
+/*--------TESTIMONIOS----------*//*No se ve el video*/
 #container-testimonios {
     display: grid;
     grid-template-columns: repeat(18,1fr);
@@ -321,7 +345,6 @@ h1 {
     color: white;
 }
 .container-main-sobremi {
-    border: 1px solid blue;
     width: 30%;
     margin-bottom: 5%;
     margin-top: 5%;
@@ -329,6 +352,9 @@ h1 {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(12,1fr);
+}
+.container-main-sobremi:hover {
+    border: 1px solid blue;
 }
 .h3-sobremi {
     margin: auto;
@@ -388,39 +414,44 @@ h1 {
     height: 100%;
 }
 /*Formulario*/
-#nombre { /*-------------------Como separar el texto del filo un poco--------------*/
-    grid-column: 2/10;
-    grid-row: 5/7;
+.cajasform {
     border-radius: 15px;
     font-family: 'roboto';
     font-size: 15px;
+    background: rgba(69, 37, 122, 0.3);
+    color: white;
+    border: none;
+}
+.cajasform:hover {
+    border: 1px solid rgba(21, 213, 166, 1) ;
+}
+#nombre { /*-------------------Como separar el texto del filo un poco--------------*/
+    grid-column: 2/10;
+    grid-row: 5/7;
 }
 #apellido {
     grid-column: 2/10;
     grid-row: 9/11;
-    border-radius: 15px;
-    font-family: 'roboto';
-    font-size: 15px;
 }
 #email {
     grid-column: 2/10;
     grid-row: 13/15;
-    border-radius: 15px;
-    font-family: 'roboto';
-    font-size: 15px;
 }
 #textarea {
     grid-column: 2/10;
     grid-row: 17/23;
-    border-radius: 15px;
-    font-family: 'roboto';
-    font-size: 15px;
 }
 #btnenviar {
     grid-column: 2/10;
     grid-row: 25/27;
     font-family: 'roboto';
     font-size: 15px;
+    background: rgba(69, 37, 300, 0.3);
+    color: white;
+    border: none;
+}
+#btnenviar:hover {
+    border: 1px solid rgba(21, 213, 166, 1) ;
 }
 /*-------------FOOTER----------*/
 #footer {
