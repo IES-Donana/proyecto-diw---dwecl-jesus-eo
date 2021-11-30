@@ -1,6 +1,7 @@
 /*Para los menu laterales de las páginas(aside) usar la clase común class="nav-lateral" y utilizar el mismo número de grillas por contenedor envolvente principales.
 Para los títulos utilizar la clase class="titulo-test"*/
 /* h3 font.size 28px bebas neue p font.size 18px*/
+/*Media query a 640px como el sm de tailwind */
 * {
     padding: 0;
     margin: 0;
@@ -142,18 +143,48 @@ h1 {
 .far:hover {
     color: rgba(21, 213, 166, 1);
 }
-@media only all and (max-width:1300px) {
+
+@media only all and (max-width:640px) {
+    /*Página principal*/
+    /*nav*/
+    #nav-enlaces {
+        font-size: 14px;
+    }
+    #nav-frase > p {
+        font-size: 14px;
+    }
+    /*main*/
     .parrafo2-sect-contprin {
         font-size: 15px;
     }
     .parrafo1-sect-contprin {
         font-size: 18px;
     }
-    #nav-enlaces {
-        font-size: 14px;
+ 
+    #section-contprin {
+        grid-column:3/11 ;
+        grid-row: 5/9;
     }
-    #nav-frase > p {
-        font-size: 14px;
+    #section-contprin > article {
+        height: 68%;
+        width: 100%;
+    }
+    #img-cuerpo-contprin {
+        border-radius: 60%;
+        height: 90%;
+        grid-column: 5/10;
+        grid-row: 2/5;
+    }
+    /*CLASES COMUNES*/
+    /*títulos páginas*/
+    .titulo-test {
+        font-size: 30px;
+        font-family: 'bebas neue';
+    }
+    /*-Menu Lateral Para todas las páginas-*//**Efecto**/
+    .nav-lateral {
+       font-size: 12px;
+       text-align: center;
     }
 }
 /*-------MIS PROYECTOS------- */
@@ -251,6 +282,20 @@ h1 {
     height: 100%;
     width: 100%;
 }
+@media only all and (max-width:640px) {
+    #main-contpro h3 { 
+        font-size: 18px;
+    }
+    #main-contpro p { 
+        font-size: 12px;
+    }
+    #main-contpro a { 
+        font-size: 13px;
+    }
+    #main-contpro img { 
+        height: 90%;
+    }
+}
 /*--------TESTIMONIOS----------*//*No se ve el video*/
 #container-testimonios {
     display: grid;
@@ -327,6 +372,24 @@ h1 {
     border-radius: 50%;
     grid-row: 1/11;
     grid-column: 2/5;
+}
+@media only all and (max-width:640px) {
+    #cuerpo-contest p{
+        font-size: 12px;
+    }
+    #cuerpo-contest span{
+        font-size: 14px;
+    }
+    #cuerpo-contest img{
+        height: 90%;
+        grid-row: 1/11;
+        grid-column: 1/6;
+    }
+    #cuerpo-contest video{
+        height: 90%;
+        grid-row: 1/11;
+        grid-column: 1/6;
+    }
 }
 /*---------SOBRE MI ---------*/
 
