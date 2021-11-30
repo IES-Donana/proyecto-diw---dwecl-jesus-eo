@@ -7,7 +7,7 @@
 4. [RECURSOS](#id4)
 
 ## DESCRIPCIÓN<a name="id1"></a>
-[Este proyecto está basado en un portafolio, que tendrá como objetivo principal será de informa al usuario sobre mis conocimientos para poder atraer y llamar la atención a cualquier usuario que esté interesado en ofrecer un puesto de trabajo.
+Este proyecto está basado en un portafolio, que tendrá como objetivo principal será de informa al usuario sobre mis conocimientos para poder atraer y llamar la atención a cualquier usuario que esté interesado en ofrecer un puesto de trabajo.
 El proyecto constara de una sola página que se ira recorriendo hacia abajo he irán apareciendo cada sección, tendrá una página externa donde se verá el curriculum.
 A continuación, se define cada parte que compone el proyecto:
 -	Como título será ‘Mi portfolio’.
@@ -25,23 +25,24 @@ Tendrá una navegación lateral que serán en laces a distintas partes de la pá
 -	Tendrá una página exterior que será el curriculum.
 
 
-]
+
 
 ## PROTOTIPO<a name="id2"></a>
-[ https://www.figma.com/]
+ https://www.figma.com/
 
 ## MODIFICACIONES A LA GUÍA DE ESTILOS<a name="id3"></a>
-[He modificado la página principal: he quitado los enlaces de dentro de los botones, he borrado los botones y he dejado sólo los enlaces.   ]
+He modificado la página principal y la de mis proyectos: he quitado los enlaces de dentro de los botones, he borrado los botones y he dejado sólo los enlaces para mejorar la visualización.   
+En contacto HE añadido un nuevo input llamado apellidos que es requerido por el usuario del proyecto.
 
 ## RECURSOS<a name="id4"></a>
-[He usado las herramientas que nombro a continuación:
+He usado las herramientas que nombro a continuación:
 
 -Para los wireframe he utilizado : https://mockflow.com/
 -Para los colore. https://color.adobe.com/es/create/color-wheel ,  https://coolors.co/s
 -Para el sitemap: https://www.gloomaps.com/
 -Para el prototipo: https://www.figma.com/file/4hagXdn2FxbFNzlilbGUU5/Mi-Portafolio?node-id=0%3A1
 -Iconos: https://fonts.google.com/icons?preview.size=32	
-]
+
 
 - Can I use?: https://caniuse.com/
 - Bootstrap: https://getbootstrap.com/

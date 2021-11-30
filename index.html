@@ -173,10 +173,13 @@
                 !Un saludo¡</p>
             </div>
             <div id="main-contact-right">
-                <input type="text" name="nombre" id="nombre" class = "cajasform" placeholder="Nombre">
-                <input type="text" name="apellido" id="apellido" class = "cajasform"placeholder="Apellidos">
-                <input type="email" name="email" id="email" class = "cajasform" placeholder="E-mail">
-                <textarea name="textarea" id="textarea" class = "cajasform" cols="30" rows="10" placeholder="Deja tu mensaje"></textarea>
+                <input type="text" name="nombre" id="nombre" class = "cajasform" placeholder="Nombre" maxlength="20" required>
+
+                <input type="text" name="apellido" id="apellido" class = "cajasform" placeholder="Apellidos" maxlength="20" required>
+
+                <input type="email" name="email" id="email" class = "cajasform" placeholder="E-mail" pattern="^([\w\.\-_]+)?\w+@[\w-_]+(\.\w+){1,}$" title="Correo electronico incorrecto" required>
+                
+                <textarea name="textarea" id="textarea" class = "cajasform" cols="30" rows="10" placeholder="Deja tu mensaje" disabled = "true" required></textarea>
                 <button id="btnenviar">Enviar</button>
             </div>
         </main>
@@ -190,7 +193,7 @@
         <i class="fab fa-github-square"></i>
     </div>
 
-
+<script src="proyecto.js"></script>
 </body>
 
 </html>
