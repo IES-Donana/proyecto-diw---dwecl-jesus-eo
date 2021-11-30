@@ -1,7 +1,7 @@
 /*Para los menu laterales de las páginas(aside) usar la clase común class="nav-lateral" y utilizar el mismo número de grillas por contenedor envolvente principales.
 Para los títulos utilizar la clase class="titulo-test"*/
 /* h3 font.size 28px bebas neue p font.size 18px*/
-/*Media query a 640px como el sm de tailwind */
+/*Media query a  x 681px como el sm de tailwind */
 * {
     padding: 0;
     margin: 0;
@@ -433,6 +433,14 @@ h1 {
     grid-column:2/10 ;
     grid-row: 4/10;
 }
+@media only all and (max-width:640px) {
+    #main-contsobremi p{
+        font-size: 13px;
+    }
+    #main-contsobremi h3{
+        font-size: 20px;
+    }
+}
 /*-----------CONTACTO-----------*/
 #container-contacto {
     display: grid;
@@ -516,6 +524,17 @@ h1 {
 #btnenviar:hover {
     border: 1px solid rgba(21, 213, 166, 1) ;
 }
+@media only all and (max-width:640px) {
+    #main-contacto p{
+        font-size: 14px;
+    }
+    #gif {
+        width: 100%;
+        height: 100%;
+        grid-row: 1/8;
+        grid-column: 2/10;
+    }
+}
 /*-------------FOOTER----------*/
 #footer {
     height: 100px;
@@ -534,7 +553,12 @@ h1 {
     height: 50%;
     margin-right: 65px;
 }
-
+@media only all and (max-width:640px) {
+    #instagram {
+        height: 50%;
+        margin-right: 20px;
+    }
+}
 /*----------CURRICULUM----------*/
 #container-curriculum {
     height: 100vh;
@@ -599,7 +623,19 @@ h1 {
     grid-row: 4/19;
     font-size: 14px;
 }
-
+#lineatiempo1 { /*Preguntar como desplazarla a la derecha*/
+    width: 3px;
+    background-color: black;
+    grid-column: 5/6;
+    grid-row: 3/19;
+}
+#punto1 {
+    width: 40%;
+    border-radius: 50%;
+    background-color: black;
+    grid-column: 5/6;
+    grid-row: 4/5;
+} 
 /*Contenedor educación*/
 #ed-cur {
     height: 40%;
