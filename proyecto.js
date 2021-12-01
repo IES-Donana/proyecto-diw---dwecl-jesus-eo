@@ -1,6 +1,8 @@
 let btnenviar = document.getElementById("btnenviar");
 btnenviar.addEventListener('click',validar);
 
+let nombre = document.querySelector('#nombre');
+let apellido = document.getElementById("apellido");
 let email = document.getElementById("email");
 /*Cuando pulsamos una tecla comprueba si es el shift*/
 email.addEventListener('keydown', function (e) {
@@ -8,22 +10,20 @@ email.addEventListener('keydown', function (e) {
     alert("El email no puede contener mayúsculas");
     }
 });
-let nombre = document.querySelector('#nombre');
-let apellido = document.getElementById("apellido");
 
-/*email.addEventListener('input',validar);
+
+/* email.addEventListener('input',validar);
 nombre.addEventListener('input',validar);
-apellido.addEventListener('input',validar);*/
+apellido.addEventListener('input',validar);  */
 
-let todoValidado = false;
-function validarNombre() {
-    console.log("entra");
-    if(!nombre.checkValidity()) {
-        nombre.validationMessage;
-    }
+
+/* Hay que vaciar el valor de setCustomValidity porque se queda guardado la cadena introducida anteriormente */
+function limpiarCustomvaliditi() {
+    setCustomValidity() = '';
 }
 
 function validarEmail() { 
+    limpiarCustomvaliditi();
     //Si no contiene datos validos
     if(!email.checkValidity()){
         if(email.validity.patternMismatch){
@@ -35,10 +35,13 @@ function validarEmail() {
     return true;
 }
 
+function validarNombre() {
+    
+}
 function validar(e) {
-    if(!validarNombre() && validarEmail()) {
-        e.preventDefault();
-    } else {
+    if(validarNombre() && validarEmail()) {
         document.getElementById('textarea').disabled = false;
+    } else {
+        e.preventDefault();
     }
 }
