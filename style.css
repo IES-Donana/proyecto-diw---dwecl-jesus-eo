@@ -1,7 +1,7 @@
 /*Para los menu laterales de las páginas(aside) usar la clase común class="nav-lateral" y utilizar el mismo número de grillas por contenedor envolvente principales.
 Para los títulos utilizar la clase class="titulo-test"*/
 /* h3 font.size 28px bebas neue p font.size 18px*/
-/*Media query a  x 681px como el sm de tailwind */
+/*Media query a 640 x 681px como el sm de tailwind */
 * {
     padding: 0;
     margin: 0;
@@ -137,6 +137,7 @@ h1 {
     height: 15%;
     padding: 5px;
     width: 80%;
+    margin-top: 20px;
 }
 #btn-section-contprin > a:hover {
     font-size: 20px;
@@ -149,16 +150,24 @@ h1 {
 }
 .far:hover {
     color: rgba(21, 213, 166, 1);
+    font-size: 60px;
 }
-
+@media only all and (min-width:640px){
+    #container-burguer {
+        display: none;
+    }
+}
 @media only all and (max-width:640px) {
     /*Página principal*/
     /*nav*/
     #nav-enlaces {
-        font-size: 14px;
+        display: none;
     }
     #nav-frase > p {
         font-size: 14px;
+    }
+    #nav-frase {
+        width: 80%;
     }
     /*main*/
     .parrafo2-sect-contprin {
@@ -181,6 +190,16 @@ h1 {
         height: 90%;
         grid-column: 5/10;
         grid-row: 2/5;
+    }
+    /*Icono hamburguesa*/
+    #container-burguer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20%;
+    }
+    .icono-burguer {
+        font-size: 1.5em;
     }
     /*CLASES COMUNES*/
     /*títulos páginas*/
