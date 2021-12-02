@@ -166,7 +166,7 @@ h1 {
     align-items: center;
     background-color: rgba(80, 80, 80, 0.6);
     cursor: pointer;
-    transition: all 2s;
+    transition: all 1s;
 }
 .nav-burguer > a {
     color: white;
@@ -187,6 +187,9 @@ h1 {
 @media only all and (min-width:640px){
     #container-burguer {
         display: none;
+    }
+    .nav-burguer-off {
+        transform: translateX(-3000px);
     }
 }
 @media only all and (max-width:640px) {
