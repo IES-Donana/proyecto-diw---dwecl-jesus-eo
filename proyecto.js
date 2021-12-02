@@ -20,7 +20,7 @@ apellido.addEventListener('input',validar);  */
 /* Hay que vaciar el valor de todos los elementos del formulario con setCustomValidity porque se queda guardado la cadena introducida anteriormente */
 function limpiarCustomvaliditi() {
     for (const elemento of formulario.elements) {
-        elemento.setCustomValidity(" ");
+        elemento.setCustomValidity("");
     }
 }
 //*********************Falla en el setcustomvalidity y en el pattron */
@@ -31,15 +31,14 @@ function validarEmail() {
         console.log("Entra en valida email");
         if(email.validity.patternMismatch){
             email.setCustomValidity("Debes introducir un email valido");
-            return false;
         }
         //Si el campo email es vacio devuelve true
         if(email.validity.valueMissing){
             email.setCustomValidity("Debes rellenar el campo email");
-        return false;
         }
         //Para mandar el mensaje creado
         email.reportValidity();
+        return false;
     }
     return true;
 }
@@ -50,9 +49,10 @@ function validarNombre() {
         if(nombre.validity.valueMissing){
             console.log("Entra en valida nombre");
             nombre.setCustomValidity("Debes rellenar el campo nombre");
+            nombre.reportValidity();
             return false;
         }
-        nombre.reportValidity();
+        
     }
     return true;
 }
@@ -78,4 +78,18 @@ function validar(e) {
         console.log("Entra en prevent");
         e.preventDefault();
     }
+}
+
+
+/**
+ * Menu hamburguesa
+ */
+
+let iconoBurguer = document.querySelector(".nav-burguer");
+
+iconoBurguer.addEventListener("click",cambiarClases);
+
+
+function cambiarClases() {
+    
 }
