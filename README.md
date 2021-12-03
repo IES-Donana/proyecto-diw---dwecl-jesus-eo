@@ -31,8 +31,11 @@ Tendrá una navegación lateral que serán en laces a distintas partes de la pá
  https://www.figma.com/
 
 ## MODIFICACIONES A LA GUÍA DE ESTILOS<a name="id3"></a>
-He modificado la página principal y la de mis proyectos: he quitado los enlaces de dentro de los botones, he borrado los botones y he dejado sólo los enlaces para mejorar la visualización.   
-En contacto HE añadido un nuevo input llamado apellidos que es requerido por el usuario del proyecto.
+He modificado la página principal y la de mis proyectos: he quitado los enlaces de dentro de los botones, he borrado los botones y he dejado sólo los enlaces para mejorar la visualización. 
+En la parte de contacto, mis proyectos, sobre mi y testimonios he añadido una flecha que nos lleva a la página principal con el fin de facilitarle la navegación al usuario.  
+En contacto he añadido un nuevo input llamado apellidos que es requerido por el usuario del proyecto.
+En el footer he cambiado color de fondo he iconos.
+El curriculum lo he cambiado totalmente por convenio con el usuario.
 
 ## RECURSOS<a name="id4"></a>
 He usado las herramientas que nombro a continuación:
