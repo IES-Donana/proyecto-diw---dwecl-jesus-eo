@@ -87,24 +87,24 @@ function validar(e) {
  * Menu hamburguesa
  */
 
-let iconoBurguer = document.querySelector(".icono-burguer");
-
-iconoBurguer.addEventListener("click",cambiarClases);
+ let iconoBurguer = document.querySelector(".icono-burguer");
 
 
-function cambiarClases() {
-    console.log("entra");
-    document.querySelector(".nav-burguer").classList.toggle("nav-burguer-on");
-    document.querySelector(".nav-burguer").classList.toggle("nav-burger-off");
-}
-
+ iconoBurguer.addEventListener("click",comprobarExistenciaDiv);
+/*  iconoBurguer.addEventListener("click",cambiarClases); */
+ 
 /**
  * Creando elementos
  */
+/*Creo el div*/
+ 
+
+function CreaInserta() {
+    let divNavBurguer = document.createElement("div");
 /*Creo el div y le inserto las clases*/
- let divNavBurguer = document.createElement("div");
- divNavBurguer.setAttribute("class", "nav-burguer"); /**********Como añadirle otra clase mas */
- divNavBurguer.setAttribute("class", "nav-burguer-off");
+ 
+ /*Creo varias clases mejor con classList qeu con className*/
+ divNavBurguer.classList.add("nav-burguer-off", "nav-burguer");
 /*Creo enlaces con su contenido y el href y lo introduzco dentro del div*/
 let enlace1 = document.createElement("a");
 enlace1.setAttribute("href","#mis proyectos");
@@ -134,5 +134,34 @@ divNavBurguer.appendChild(enlace5);
 /*Lo introduzco en el html después del icono de la hamburguesa */
 let containerBurguer = document.getElementById('container-burguer');
 console.log(divNavBurguer);
-divNavBurguer.insertAdjacentElement("beforebegin", containerBurguer);
-/***Falllaaaa, no secomo meterlo en el html */
+
+/*Para insertarlo hay que hacer referencia a un elemento que ya existe es decir el elemento que llama a insertAdjacentElement()*/
+containerBurguer.insertAdjacentElement("afterend", divNavBurguer);
+} 
+
+function borrarElemento(){
+
+  document.querySelector(".nav-burguer").remove();
+}
+
+
+
+
+function cambiarClases() {
+    console.log("entra");
+    document.querySelector(".nav-burguer").classList.toggle("nav-burguer-on");
+    document.querySelector(".nav-burguer").classList.toggle("nav-burguer-off");
+}
+
+/*Si existe la clase nav-burguer-on crea los elementos*/
+function comprobarExistenciaDiv() {
+    console.log(document.querySelector(".nav-burguer"));
+    let x = document.querySelector(".nav-burguer");
+    if (x) {
+        borrarElemento();
+    }else {
+        CreaInserta();
+        setTimeout(cambiarClases(),2000);
+    }
+    
+}
