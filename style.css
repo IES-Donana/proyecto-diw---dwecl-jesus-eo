@@ -9,6 +9,9 @@ Para los títulos utilizar la clase class="titulo-test"*/
     /* overflow-y: hidden; */   
    /* color: white;*/
 }
+body::-webkit-scrollbar {
+    width: 0px;
+}
 /*---Etiquetas generales---*/
 button {
     border-radius: 40px;
@@ -183,7 +186,10 @@ h1 {
     color: rgba(21, 213, 166, 1);
     border-bottom: 2px solid rgba(21, 213, 166, 1);
 }
-/*Giro icono*/
+/*Giro icono hamburguesa*/
+ .giro-burguer {
+     transform: rotate(90deg);
+ }
 /*Clases para habilitar o deshabilitar el nav hamburguesa*/ 
 .nav-burguer-off {
     transform: translateX(-3000px);
@@ -625,8 +631,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(51, 3, 129);
-  /*   background-color: rgba(20, 34, 70, 0.85); */
+    background-color: rgba(20, 34, 70, 0.70); 
 }
 #footer > a {
     width: 10%;

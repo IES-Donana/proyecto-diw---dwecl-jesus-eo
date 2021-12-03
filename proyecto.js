@@ -1,3 +1,4 @@
+/******************FORMULARIO*****************************************+ */
 let btnenviar = document.getElementById("btnenviar");
 let formulario = document.getElementById("main-contact-right");
 let nombre = document.querySelector('#nombre');
@@ -13,9 +14,9 @@ email.addEventListener('keydown', function (e) {
 
 
 
-nombre.addEventListener('input',validar);
-apellido.addEventListener('input',validar); 
-email.addEventListener('input',validar);
+nombre.addEventListener('input',validarNombre);
+apellido.addEventListener('change', validarApellido);
+email.addEventListener('blur', validar);
 
 /* Hay que vaciar el valor de todos los elementos del formulario con setCustomValidity porque se queda guardado la cadena introducida anteriormente */
 function limpiarCustomvaliditi() {
@@ -52,7 +53,6 @@ function validarNombre() {
             nombre.reportValidity();
             return false;
         }
-        
     }
     return true;
 }
@@ -81,17 +81,13 @@ function validar(e) {
 }
 
 
-/**
- * 
- * 
- * Menu hamburguesa
- */
+/********************************************* Menu hamburguesa*****************************************************/
 
  let iconoBurguer = document.querySelector(".icono-burguer");
 
 
  iconoBurguer.addEventListener("click",comprobarExistenciaDiv);
-/*  iconoBurguer.addEventListener("click",cambiarClases); */
+ iconoBurguer.addEventListener("click",giraIcono);
  
 /**
  * Creando elementos
@@ -164,4 +160,10 @@ function comprobarExistenciaDiv() {
         setTimeout(cambiarClases(),2000);
     }
     
+}
+
+
+/*Giro icono*/
+function giraIcono() {
+    iconoBurguer.classList.toggle("giro-burguer");
 }
