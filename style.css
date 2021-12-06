@@ -9,7 +9,7 @@ Para los títulos utilizar la clase class="titulo-test"*/
     /* overflow-y: hidden; */   
    /* color: white;*/
 }
-body::-webkit-scrollbar {
+body::-webkit-scrollbar { /*Da un warning en la validación no hay otra forma de poner esa propiedad*/
     width: 0px;
 }
 /*---Etiquetas generales---*/
@@ -114,8 +114,9 @@ h1 {
 #img-cuerpo-contprin {
     border-radius: 60%;
     height: 90%;
+    width: 80%;
     grid-column: 2/6;
-    grid-row: 3/8;
+    grid-row: 2/8;
 }
 /*Sección central*/
 #section-contprin {
@@ -602,7 +603,7 @@ h1 {
     grid-row: 25/27;
     font-family: 'roboto';
     font-size: 16px;
-    background: rgba(69, 37, 300, 0.6);
+    background: rgba(69, 37, 255, 0.6);
     color: rgb(255, 255, 255);
     border: none;
 }
