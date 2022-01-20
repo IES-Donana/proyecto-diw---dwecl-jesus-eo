@@ -64,25 +64,33 @@ h1 {
     opacity: 0.8;
 }
 
-/* -----PÁGINA PRINCIPAL----- */ /****colocar la img *****/
+/* -----PÁGINA PRINCIPAL----- */ 
 #container-principal {
     display: flex ;
     flex-direction: column;
     height: 100vh;
     color: white;
 }
-/*-Navegación-*/
+/*-Navegación superior-*/
 /* Calculo el alto con respecto al del contenedor padre*/
 #nav-contprin {
     display: flex;
     height: 80px;
     background-color: rgba(80, 80, 80, 1);
 }
+#container-logotipo {
+    width: 10%;
+}
+#logo {
+    margin-left: 10%;
+    height: 100%;
+    width: 100%;
+}
 #nav-frase {
     display: flex;
     align-items: center;
     word-wrap: break-word;
-    width: 60%;
+    width: 55%;
     margin-left: 15px;
     font-family: 'Roboto', sans-serif;
 }
@@ -91,7 +99,7 @@ h1 {
     flex-wrap: wrap;
     align-items: center;
     justify-content:space-around ;
-    width: 40%;
+    width: 35%;
     font-family: 'Roboto', sans-serif;
 }
 #nav-enlaces > a:hover {
@@ -101,14 +109,30 @@ h1 {
 #nav-enlaces > a {
     color: white;
 }
+#fondo {
+    background-color: black;
+    z-index: 0; 
+}
 /*-Cuerpo-*/
 #cuerpo-contprin {
     height: 90%;
     display: grid;
     grid-template-columns: repeat(12,1fr);
     grid-template-rows: repeat(10,70px);
-    background-image:url(../img/fondoPrincipal.jpg);
-    background-size: 100% 100%;
+    
+  /*   background-image:url(../img/fondoPrincipal.jpg);
+    background-size: 100% 100%; */
+}
+#container-video {
+    z-index: -1;   
+    opacity: 20%;
+}
+#container-video > video {
+    position: absolute;
+}
+#video-fondo{   /*******No consigo ajustar el video de fondo*****/
+   width: 100%;
+   /* height: 100vh; */
 }
 /*Imagen */
 @keyframes apareceElementos {
@@ -120,7 +144,7 @@ h1 {
    85% {opacity: 85%;}
    100% {opacity: 100%;}  
 } 
-#img-cuerpo-contprin {
+.img-cuerpo-contprin {
     border-radius: 60%;
     height: 90%;
     width: 80%;
@@ -128,6 +152,10 @@ h1 {
     grid-row: 2/8;
    animation-name: apareceElementos;
    animation-duration: 2s;
+}
+#picture-contprin {
+    grid-column: 2/6;
+    grid-row: 2/8;
 }
 /*Sección central*/
 #section-contprin {
@@ -194,6 +222,7 @@ h1 {
     justify-content: space-around;
     align-items: center;
     background-color: rgba(80, 80, 80, 0.6);
+    z-index: 1;
     cursor: pointer;
     transition: all 1s;
 }
@@ -252,9 +281,13 @@ h1 {
         height: 68%;
         width: 100%;
     }
-    #img-cuerpo-contprin {
+    .img-cuerpo-contprin {
         border-radius: 60%;
         height: 90%;
+        grid-column: 5/10;
+        grid-row: 2/5;
+    }
+    #picture-contprin {
         grid-column: 5/10;
         grid-row: 2/5;
     }
@@ -318,10 +351,21 @@ h1 {
     font-family: 'bebas neue';
     color: rgba(21, 213, 166, 1);
 }
-#img-pro1 {
+.img-pro1 {
     height: 100%;
     width: 100%;
     border-radius: 20px;
+    grid-row: 3/12;
+    grid-column: 2/8;
+}
+/*Efecto hover escala de grises*/
+.img-pro1:hover{
+    filter: grayscale();
+}
+.img-pro2:hover{
+    filter: grayscale();
+}
+#picture-img-pro1 {
     grid-row: 3/12;
     grid-column: 2/8;
 }
@@ -337,7 +381,7 @@ h1 {
     grid-row: 11/12;
 }
 #a-pro1:hover {
-    font-size: 20px;
+    font-size: 18px;
 }
 #proyecto2 {
     grid-row: 9/18;
@@ -366,14 +410,18 @@ h1 {
 }
 /*boton*/
 #a-pro2:hover {
-    font-size: 20px;
+    font-size: 18px;
 }
-#img-pro2 {
+.img-pro2 {
     border-radius: 20px;
     grid-row: 3/12;
     grid-column: 9/15;
     height: 100%;
     width: 100%;
+}
+#picture-img-pro2 {
+    grid-row: 3/12;
+    grid-column: 9/15;
 }
 @media only all and (max-width:640px) {
     #main-contpro h3 { 
@@ -437,6 +485,10 @@ h1 {
     grid-column: 2/5;
     margin-bottom: 10px;
 }
+#picture-img-test1 {
+    grid-row: 1/11;
+    grid-column: 2/5; 
+}
 #testimonio2 {
     height: 33.3%;
     display: grid;
@@ -448,6 +500,10 @@ h1 {
     height: 95%;
     width: 100%;
     border-radius: 50%;
+    grid-row: 1/11;
+    grid-column: 2/5;
+}
+#picture-img-test2 {
     grid-row: 1/11;
     grid-column: 2/5;
 }
@@ -477,6 +533,16 @@ h1 {
         height: 90%;
         grid-row: 1/11;
         grid-column: 1/6;
+    }
+    #picture-img-test1 {
+        height: 90%;
+        grid-row: 1/11;
+        grid-column: 1/6;  
+    }
+    #picture-img-test2 {
+        height: 90%;
+        grid-row: 1/11;
+        grid-column: 1/6;  
     }
     #cuerpo-contest video{
         height: 90%;

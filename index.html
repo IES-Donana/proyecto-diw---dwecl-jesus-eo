@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"  type="image/ico" href="img/favicon.ico"><!-- Favicon -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
@@ -16,21 +17,25 @@
 </head>
 
 <body>
+    <audio autoplay>
+        <source src="audio/bk-sound.mp3" type="audio/mpeg">
+        <source src="audio/bk-sound.ogg" type="audio/ogg">
+        El navegador no soporta el audio
+    </audio>
     <!-- Página principal -->
     <a name = 'pagsuperior'></a>
+    
     <div id="container-principal">
+       
         <nav id="nav-contprin">
+            <div id="container-logotipo">
+                <object id="logo" data="img/dibujo4.svg" type="image/svg+xml"></object>
+            </div>
             
             <div id="container-burguer">
                 <i class="icono-burguer fas fa-bars"></i>
             </div>
-            <!-- <div class ="nav-burguer nav-burguer-off">
-                <a href="#mis proyectos">Mis proyectos</a>
-                <a href="#testimonios">Testimonios</a>
-                <a href="#contacto">Contacto</a>
-                <a href="#sobre mi">Sobre mi</a>
-                <a href="curriculum.html">CV</a>
-            </div> -->
+          
             
             <div id="nav-frase">
                 <p>Frase del dia: <i>"No busques los errores, busca un remedio" - Henry Ford</i></p>
@@ -43,8 +48,14 @@
                 <a href="curriculum.html">CV</a>
             </div>
         </nav>
+        <div id="fondo">  
         <main id="cuerpo-contprin">
-            <img id="img-cuerpo-contprin" src="img/imgp.jpg" alt="imagen persolnal">
+            <picture id="picture-contprin">
+                <source class ="img-cuerpo-contprin" media="(max-width:640px )" srcset="img/imgp.jpg">
+                <source class ="img-cuerpo-contprin" media="(min-width:640px )" srcset="img/imgp.jpg">
+                <img  class ="img-cuerpo-contprin" src="img/imgp.jpg" alt="imagen persolnal">
+            </picture>
+           
             <section id="section-contprin">
                 <article>
                     <p class="parrafo1-sect-contprin">Hola, Soy Jesús, un <span class="spanp1">Junior Developer</span>
@@ -63,9 +74,13 @@
                 </div>
             </section>
             <a class="far" href="#mis proyectos"><i class="far fa-arrow-alt-circle-down"></i></a> 
+            <div id="container-video">
+                <video id="video-fondo" src="video/video fondo.mp4" muted autoplay loop></video>
+            </div>
+         
         </main>
-        
-
+        </div> 
+     
     </div>
     <!-- Mis proyectos -->
     <a name = 'mis proyectos'></a>
@@ -79,7 +94,12 @@
         <h1 class="titulo-test" id="titulo-pro">Mis proyectos</h1>
         <main id="main-contpro">
             <div id="proyecto1">
-                <img src="img/imgcarrito.jpeg" alt="Imagen carrito" id="img-pro1">
+                <picture id="picture-img-pro1">
+                    <source class="img-pro1" media="(min-width:640px )" srcset="img/imgcarrito.jpeg">
+                    <source class="img-pro1"  media="(max-width:640px )" srcset="img/proyecto-1-sm.jpeg">
+                    <img class="img-pro1" src="img/imgcarrito.jpeg" alt="Imagen carrito">
+                </picture>
+                
                 <h3>Carrito de compra</h3>
                 <p id="p-pro1">Es un proyecto el cual se puede usar en cualquier sitio web que necesite un carrito de
                     compra para la venta de articulos donde el usuario podra realizar unas acciones como anñadir
@@ -88,7 +108,12 @@
                 <a href="https://github.com/" id="a-pro1">Ver proyecto</a>
             </div>
             <div id="proyecto2">
-                <img src="img/imgcartas.jpeg" alt="imagen cartas" id="img-pro2">
+                <picture id="picture-img-pro2">
+                    <source class="img-pro2" media="(min-width:640px )" srcset="img/imgcartas.jpeg">
+                    <source class="img-pro2"  media="(max-width:640px )" srcset="img/proyecto-2-sm.jpeg">
+                    <img  src="img/imgcartas.jpeg" alt="imagen cartas" class="img-pro2">
+                </picture>
+                
                 <h3>Juego cartas</h3>
                 <p id="p-pro2">Este proyecto fue diseñado con la finalidad de entretener al usuario, este juego consiste
                     en recibir una series de cartas que a medida que pasa la partida la iras coleccionando y gana el
@@ -112,7 +137,12 @@
         <h1 class="titulo-test">TESTIMONIOS</h1>
         <main id="cuerpo-contest">
             <div id="testimonio1">
-                <img src="img/director test1.jpg" alt="Imagen testimonio1" class="img-test1">
+                <picture id="picture-img-test1">
+                    <source class="img-test1" media="(min-width:640px )" srcset="img/directortest1.jpg">
+                    <source class="img-test1"  media="(max-width:640px )" srcset="img/directortest1.jpg">
+                    <img src="img/directortest1.jpg" alt="Imagen testimonio1" class="img-test1">
+                </picture>
+                
                 <p class="p-test">
                     Siempre atento y amable, comprometido ha adaptarse a la necesidades de mi como cliente y con
                     resultados más allá de lo que esperaba.
@@ -122,7 +152,12 @@
                 </p>
             </div>
             <div id="testimonio2">
-                <img src="img/directora test2.jpg" alt="Imagen testimonio2" class="img-test2">
+                <picture id="picture-img-test2">
+                    <source class="img-test2" media="(min-width:640px )" srcset="img/directoratest2.jpg">
+                    <source class="img-test2"  media="(max-width:640px )" srcset="img/directoratest2.jpg">
+                    <img src="img/directoratest2.jpg" alt="Imagen testimonio2" class="img-test2">
+                </picture>
+               
                 <p class="p-test">
                     Enhorabuena por tu proyecto y tu labor, Jesús. Te felicito de corazoón por haber tenido el valor de
                     compartir tu viaje y convertirte en quien estabas destinado a ser.
@@ -132,7 +167,7 @@
             </div>
             <div id="testimonio3">
                 <video controls alt="Video testimonio" class="video-test">
-                    <source src="img/Idento - Testimonios de clientes.mp4" type="video/mp4" />
+                    <source src="video/Video testimonios.mp4" type="video/mp4" />
                 </video>
                 <p class="p-test">
                     Muy profesional, gran confianza por el servicio y trato. Hemos estado siempre en contacto para
