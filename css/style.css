@@ -726,6 +726,19 @@ h1 {
     height: 50%;
     margin-right: 65px;
 }
+#detail-logo, details, #img-details  {
+    height: 100%;
+}
+summary {
+    cursor: pointer;
+}
+/* summary::marker {
+    display: none;
+    content: "";
+} */
+/* summary::before {
+    content:"👇";
+} */
 
 @media only all and (max-width:640px) {
     #instagram {
