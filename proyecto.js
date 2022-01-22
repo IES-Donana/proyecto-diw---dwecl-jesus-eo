@@ -167,3 +167,44 @@ function comprobarExistenciaDiv() {
 function giraIcono() {
     iconoBurguer.classList.toggle("giro-burguer");
 }
+
+/*****************************Scroll enlaces************************************** */
+let contProyectos = document.getElementById('container-proyectos');
+let contTestimonios = document.getElementById('container-testimonios');
+let contSobre = document.getElementById('container-sobremi');
+let contContacto = document.getElementById('container-contacto');
+let aPro = document.getElementById('a-pro');
+let aTes = document.getElementById('a-test');
+let asob = document.getElementById('a-sob');
+let acont = document.getElementById('a-cont');
+function mostrarScroll(){
+    //Medida de donde esta el scroll actualmente
+    let scrollTop = document.documentElement.scrollTop;
+    if (scrollTop > 721 && scrollTop < 1443) {
+        aPro.style.color = "rgba(21, 213, 166, 1)";
+        aTes.style.color = "";
+        asob.style.color = "";
+        acont.style.color = "";
+    } else if(scrollTop > 1443 && scrollTop < 2164){
+        aPro.style.color = "";
+        asob.style.color = "";
+        acont.style.color = "";
+        aTes.style.color = "rgba(21, 213, 166, 1)";
+    } else if(scrollTop > 2164 && scrollTop < 2886){
+        aPro.style.color = "";
+        aTes.style.color = "";
+        acont.style.color = "";
+        asob.style.color = "rgba(21, 213, 166, 1)";
+    } else if(scrollTop > 2886 ){
+        aPro.style.color = "";
+        aTes.style.color = "";
+        asob.style.color = "";
+        acont.style.color = "rgba(21, 213, 166, 1)";
+    }
+    
+    console.log(scrollTop);
+    console.log("pro" + contProyectos.offsetTop);
+    console.log("test" + contTestimonios.offsetTop);
+}
+
+window.addEventListener('scroll', mostrarScroll);

@@ -75,15 +75,17 @@
         </div> 
     </div>
     <!-- Mis proyectos -->
+<div id="container-envolvente">
+    <aside class="nav-lateral">
+        <a id="a-pro" href="#mis proyectos">Mis proyectos</a>
+        <a id="a-test" href="#testimonios">Testimonios</a>
+        <a id="a-sob" href="#sobre mi">Sobre mi</a>
+        <a  id = "a-cont" href="#contacto">Contacto</a>
+    </aside>
+    <div id="tope">
     <a name = 'mis proyectos'></a>
     <div id="container-proyectos">
-        <aside class="nav-lateral">
-            <a href="#mis proyectos">Mis proyectos</a>
-            <a href="#testimonios">Testimonios</a>
-            <a href="#sobre mi">Sobre mi</a>
-            <a href="#contacto">Contacto</a>
-        </aside>
-        <h1 class="titulo-test" id="titulo-pro">Mis proyectos</h1>
+        <!-- <h1 class="titulo-test" id="titulo-pro">Mis proyectos</h1> -->
         <main id="main-contpro">
             <div id="proyecto1">
                 <picture id="picture-img-pro1">
@@ -120,13 +122,13 @@
     <!-- TESTIMONIOS -->
     <a name = 'testimonios'></a>
     <div id="container-testimonios">
-        <aside class="nav-lateral">
+    <!--     <aside class="nav-lateral">
             <a href="#mis proyectos">Mis proyectos</a>
             <a href="#testimonios">Testimonios</a>
             <a href="#sobre mi">Sobre mi</a>
             <a href="#contacto">Contacto</a>
-        </aside>
-        <h1 class="titulo-test">TESTIMONIOS</h1>
+        </aside> -->
+        <!-- <h1 class="titulo-test">TESTIMONIOS</h1> -->
         <main id="cuerpo-contest">
             <div id="testimonio1">
                 <picture id="picture-img-test1">
@@ -177,13 +179,13 @@
     <!-----SOBRE MI----->
     <a name = 'sobre mi'></a>
     <div id="container-sobremi">
-        <aside class="nav-lateral">
+        <!-- <aside class="nav-lateral">
             <a href="#mis proyectos">Mis proyectos</a>
             <a href="#testimonios">Testimonios</a>
             <a href="#sobre mi">Sobre mi</a>
             <a href="#contacto">Contacto</a>
-        </aside>
-        <h1 class="titulo-test">SOBRE MI</h1>
+        </aside> -->
+      <!--   <h1 class="titulo-test">SOBRE MI</h1> -->
         <main id="main-contsobremi">
             <div class="container-main-sobremi">
                 <h3 class="h3-sobremi">Hobbies</h3>
@@ -208,13 +210,13 @@
     <!-------CONTACTO------->
     <a name = 'contacto'></a>
     <div id="container-contacto">
-        <aside class="nav-lateral">
+      <!--   <aside class="nav-lateral">
             <a href="#mis proyectos">Mis proyectos</a>
             <a href="#testimonios">Testimonios</a>
             <a href="#sobre mi">Sobre mi</a>
             <a href="#contacto">Contacto</a>
-        </aside>
-        <h1 class="titulo-test">CONTACTO</h1>
+        </aside> -->
+      <!--   <h1 class="titulo-test">CONTACTO</h1> -->
         <main id="main-contacto">
             <div id="main-contact-left">
                 <img src="img/cd1c9a80364113.5cdec491b07d9.gif" alt="Robots" id="gif">
@@ -230,12 +232,18 @@
                 
                 <textarea name="textarea" id="textarea" class = "cajasform" cols="30" rows="10" placeholder="Deja tu mensaje" disabled = "true" required></textarea>
                 <button id="btnenviar">Enviar</button>
+                <button id="btncontacto" onclick="document.getElementById('dialogo').show()">Datos contacto</button>
+             
             </form>
+            
         </main>
         <a href="#pagsuperior" id="flechaUpFooter">
             <i class="far fa-arrow-alt-circle-up arrow-up"></i>
         </a>
     </div>
+
+   </div><!-- Tope -->
+</div><!-- Container envolvente -->
     <!---------FOOTER--------->
    
     <div id="footer">
@@ -249,6 +257,12 @@
        <a href="https://es-es.facebook.com/"><i class="fab fa-facebook-square"></i></a> 
        <a href="https://www.instagram.com/?hl=es" ><i class="fab fa-instagram"></i></a>
         <a href="https://github.com/"><i class="fab fa-github-square"></i></a>
+        <dialog id="dialogo">
+            <p>Email: jesusmanuel.espinar@iesdonana.org</p>
+            <p>Teléfono: 343434343</p>
+            <p>Sanlúcar de Barrameda - Cádiz</p>
+            <button id="close" onclick="document.getElementById('dialogo').close()">cerrar</button>
+        </dialog>
     </div>
 
 <script src="proyecto.js"></script>

@@ -35,14 +35,27 @@ h1 {
 }
 /*-Menu Lateral Para todas las páginas-*//**Efecto**/
 .nav-lateral {
-    grid-column: 1/4;
-    grid-row: 1/11;
+   /*  grid-column: 1/4;
+    grid-row: 1/11; *************************************/
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     background: rgba(69, 37, 122, 0.3);
     cursor: default;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 80%;
+}
+#container-envolvente {
+    display: flex;/***********************************/
+    background-color: rgb(34, 4, 61);
+    background-image: url(intro.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+    background-attachment: fixed;
 }
 .nav-lateral > a {
     border-bottom: 3px solid rgba(21, 213, 166, 1);
@@ -59,6 +72,9 @@ h1 {
 }
 /*Flecha Up*/
 #flechaUpFooter {
+   /*  position: fixed;
+    bottom: 0;
+    right: 0; */
     grid-column: 18/19;
     grid-row: 10/11;
     opacity: 0.8;
@@ -315,7 +331,7 @@ h1 {
 }
 /*-------MIS PROYECTOS------- */
 #container-proyectos {
-    background-image: url(../img/—Pngtree—black\ business\ atmosphere\ business\ card_1099742.jpg);
+   /*  background-image: url(../img/—Pngtree—black\ business\ atmosphere\ business\ card_1099742.jpg); */
     display: grid;
     grid-template-columns: repeat(18,1fr);
     grid-template-rows: /*repeat(10,72px)*/ repeat(10,1fr);
@@ -328,7 +344,7 @@ h1 {
 }
 /*-Cuerpo-*/
 #main-contpro {
-     grid-column: 5/18;
+     grid-column: 1/19;
      grid-row: 3/11;
      display: grid;
      grid-template-columns: repeat(12, 1fr);
@@ -443,7 +459,7 @@ h1 {
     grid-template-columns: repeat(18,1fr);
     grid-template-rows: /*repeat(10,72px)*/ repeat(10,1fr);
     height: 100vh; 
-    background-image: url(../img/—Pngtree—black\ business\ atmosphere\ business\ card_1099742.jpg);
+   /*  background-image: url(../img/—Pngtree—black\ business\ atmosphere\ business\ card_1099742.jpg); */
 }
 
 /*-Título-*/
@@ -454,7 +470,7 @@ h1 {
 }
 /*-Cuerpo-*/
 #cuerpo-contest {
-    grid-column: 5/18;
+    grid-column:1/19;
     grid-row: 3/11;
     display:flex;
     flex-direction: column;
@@ -557,10 +573,10 @@ h1 {
     grid-template-columns: repeat(18,1fr);
     grid-template-rows: /*repeat(10,72px)*/ repeat(10,1fr);
     height: 100vh; 
-    background-image: url(../img/—Pngtree—black\ business\ atmosphere\ business\ card_1099742.jpg);
+   /*  background-image: url(../img/—Pngtree—black\ business\ atmosphere\ business\ card_1099742.jpg); */
 }
 #main-contsobremi {
-    grid-column: 5/18;
+    grid-column: 2/18;
     grid-row: 3/11;
     display:flex;
     justify-content: space-around;
@@ -607,10 +623,10 @@ h1 {
     grid-template-columns: repeat(18,1fr);
     grid-template-rows: /*repeat(10,72px)*/ repeat(10,1fr);
     height: 100vh; 
-    background-image: url(../img/—Pngtree—black\ business\ atmosphere\ business\ card_1099742.jpg);
+    /*  background-image: url(../img/—Pngtree—black\ business\ atmosphere\ business\  card_1099742.jpg); */
 }
 #main-contacto {
-    grid-column: 5/18;
+    grid-column: 2/18;
     grid-row: 3/11;
     display: flex;
     flex-wrap: wrap;
@@ -696,6 +712,31 @@ h1 {
 #btnenviar:active {
     background-color: blue;
 }
+#btncontacto {
+    grid-column: 2/10;
+    grid-row: 28/30;
+    font-family: 'roboto';
+    font-size: 16px;
+    background: rgba(69, 37, 255, 0.6);
+    color: rgb(255, 255, 255);
+    border: none;
+}
+#btncontacto:hover {
+    border: 1px solid rgba(21, 213, 166, 1) ;
+}
+#btncontacto:active {
+    background-color: blue;
+}
+dialog[open] {
+   position: relative;
+   border: none;
+   background-color: rgba(20, 34, 70, 0); 
+   font-family: 'roboto';
+}
+#close {
+    padding: 3px;
+    border: none;
+}
 
 @media only all and (max-width:640px) {
     #main-contacto p{
@@ -726,7 +767,7 @@ h1 {
     height: 50%;
     margin-right: 65px;
 }
-#detail-logo, details, #img-details  {
+#details-logo, details, #img-details  {
     height: 100%;
 }
 summary {
