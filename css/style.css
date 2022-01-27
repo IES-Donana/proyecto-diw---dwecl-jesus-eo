@@ -167,6 +167,7 @@ h1 {
 #fondo {
     background-color: black;
     z-index: 0; 
+    height: 100vh;
 }
 /*-Cuerpo-*/
 #cuerpo-contprin {
@@ -185,9 +186,10 @@ h1 {
 #container-video > video {
     position: absolute;
 }
-#video-fondo{   /*******No consigo ajustar el video de fondo*****/
+#video-fondo{  
    width: 100%;
-   /* height: 100vh; */
+   height: 90vh;
+   object-fit: cover;
 }
 /*Imagen */
 @keyframes apareceElementos {
@@ -536,7 +538,7 @@ h1 {
 .img-test1 {
     height: 95%;
     width: 100%;
-    border-radius: 50%;
+    border-radius: 20%;
     grid-row: 1/11;
     grid-column: 2/5;
     margin-bottom: 10px;
@@ -555,7 +557,7 @@ h1 {
 .img-test2 {
     height: 95%;
     width: 100%;
-    border-radius: 50%;
+    border-radius: 20%;
     grid-row: 1/11;
     grid-column: 2/5;
 }
@@ -574,7 +576,6 @@ h1 {
 .video-test { /* No se ve en la pantalla */
     height: 95%;
     width: 100%;
-    border-radius: 50%;
     grid-row: 1/11;
     grid-column: 2/5;
 }
@@ -656,6 +657,12 @@ h1 {
     #main-contsobremi h3{
         font-size: 20px;
     }
+    #main-contsobremi{
+        flex-direction: column;
+    }
+    .container-main-sobremi{
+        width: auto;
+    }
 }
 /*-----------CONTACTO-----------*/
 #container-contacto {
@@ -667,7 +674,7 @@ h1 {
 }
 #main-contacto {
     grid-column: 2/18;
-    grid-row: 3/11;
+    grid-row: 1/11;
     display: flex;
     flex-wrap: wrap;
     gap: 4%;
@@ -684,7 +691,7 @@ h1 {
 #gif {
     height: 100%;
     grid-row: 1/8;
-    grid-column: 2/7;
+    grid-column: 1/7;
 }
 #p-left {
     grid-column: 2/10;
@@ -776,6 +783,8 @@ dialog[open] {
 #close {
     padding: 3px;
     border: none;
+    background: rgb(4, 4, 165);
+    color: white;
 }
 
 @media only all and (max-width:640px) {

@@ -37,6 +37,7 @@ En la parte de contacto, mis proyectos, sobre mi y testimonios he añadido una f
 En contacto he añadido un nuevo input llamado apellidos que es requerido por el usuario del proyecto.
 En el footer los iconos.
 El curriculum lo he cambiado totalmente por convenio con el usuario.
+He modificado el fondo del sitio web.
 
 ## RECURSOS<a name="id4"></a>
 He usado las herramientas que nombro a continuación:
