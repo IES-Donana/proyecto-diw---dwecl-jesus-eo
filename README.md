@@ -1,7 +1,7 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-f059dc9a6f8d3a56e377f745f24479a46679e63a5d9fe6f495e02850cd0d8118.svg)](https://classroom.github.com/online_ide?assignment_repo_id=6418044&assignment_repo_type=AssignmentRepo)
 # Proyecto DIW - DWECL
 
-## ÍNDICE   
+## ÍNDICE
 1. [DESCRIPCIÓN](#id1)
 2. [PROTOTIPO](#id2)
 3. [MODIFICACIONES A LA GUÍA DE ESTILOS](#id3)
@@ -14,7 +14,7 @@ A continuación, se define cada parte que compone el proyecto:
 -	Como título será ‘Mi portfolio’.
 -	En primer lugar, planteamos la propuesta del proyecto con la realización de un boceto(sketch) en el cual reflejamos las ideas de nuestro sitio web de la cual partimos para después crear el wireframe.
 -	Después del planteamiento realizo el webmap que va a ser la navegabilidad del sitio web la cual uso la herramienta: https://www.gloomaps.com/
--	La página principal tendrá un encabezado en el cual aparecerá una frase por cada día y varios enlaces a distintas partes de la página. 
+-	La página principal tendrá un encabezado en el cual aparecerá una frase por cada día y varios enlaces a distintas partes de la página.
 Constará de una imagen de fondo, una foto y una breve presentación donde tendrá un enlace al apartado ‘Sobre mi’ y un enlace para poder acceder al curriculum.
 -	A continuación, la siguiente página será ‘Mis proyectos’, tendrá en la parte izquierda una navegación donde hay enlaces a distintas partes del proyecto, tendrá apartados por proyecto los cuales constaran de una imagen una breve descripción y un enlace hacia github que lo lleve hacia el proyecto.
 -	A continuación, será la página de testimonios la cual tendrá varias fotos de los testimonios, algún video y contenidos de las valoraciones de los clientes y empresas en la que he trabajado.
@@ -32,11 +32,12 @@ Tendrá una navegación lateral que serán en laces a distintas partes de la pá
  https://www.figma.com/
 
 ## MODIFICACIONES A LA GUÍA DE ESTILOS<a name="id3"></a>
-He modificado la página principal y la de mis proyectos: he quitado los enlaces de dentro de los botones, he borrado los botones y he dejado sólo los enlaces para mejorar la visualización. 
-En la parte de contacto, mis proyectos, sobre mi y testimonios he añadido una flecha que nos lleva a la página principal con el fin de facilitarle la navegación al usuario.  
+He modificado la página principal y la de mis proyectos: he quitado los enlaces de dentro de los botones, he borrado los botones y he dejado sólo los enlaces para mejorar la visualización.
+En la parte de contacto, mis proyectos, sobre mi y testimonios he añadido una flecha que nos lleva a la página principal con el fin de facilitarle la navegación al usuario.
 En contacto he añadido un nuevo input llamado apellidos que es requerido por el usuario del proyecto.
 En el footer los iconos.
 El curriculum lo he cambiado totalmente por convenio con el usuario.
+He modificado el fondo del sitio web.
 
 ## RECURSOS<a name="id4"></a>
 He usado las herramientas que nombro a continuación:
@@ -45,7 +46,7 @@ He usado las herramientas que nombro a continuación:
 -Para los colore. https://color.adobe.com/es/create/color-wheel ,  https://coolors.co/s
 -Para el sitemap: https://www.gloomaps.com/
 -Para el prototipo: https://www.figma.com/file/4hagXdn2FxbFNzlilbGUU5/Mi-Portafolio?node-id=0%3A1
--Iconos: https://fonts.google.com/icons?preview.size=32	
+-Iconos: https://fonts.google.com/icons?preview.size=32
 
 
 - Can I use?: https://caniuse.com/
