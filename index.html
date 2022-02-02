@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html lang='es'>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon"  type="image/ico" href="img/favicon.ico"><!-- Favicon -->
@@ -197,13 +197,7 @@
     <!-----SOBRE MI----->
     <a name = 'sobre mi'></a>
     <div id="container-sobremi">
-        <!-- <aside class="nav-lateral">
-            <a href="#mis proyectos">Mis proyectos</a>
-            <a href="#testimonios">Testimonios</a>
-            <a href="#sobre mi">Sobre mi</a>
-            <a href="#contacto">Contacto</a>
-        </aside> -->
-      <!--   <h1 class="titulo-test">SOBRE MI</h1> -->
+
         <main id="main-contsobremi">
             <div class="container-main-sobremi">
                 <h3 class="h3-sobremi">Hobbies</h3>
@@ -235,16 +229,16 @@
                 !Un saludo¡</p>
             </div>
             <form id="main-contact-right">
-                <label for="nombre"></label>
+                <label for="nombre" title="nombre"></label>
                 <input type="text" name="nombre" id="nombre" class = "cajasform" placeholder="Nombre" maxlength="20" required>
 
-                <label for="apellido"></label>
+                <label for="apellido" title="apellido"></label>
                 <input type="text" name="apellido" id="apellido" class = "cajasform" placeholder="Apellidos" maxlength="20" required>
 
-                <label for="email"></label>
+                <label for="email" title="email"></label>
                 <input type="email" name="email" id="email" class = "cajasform" placeholder="E-mail" pattern="^([\w\.\-_]+)?\w+@[\w-_]+(\.\w+){1,}$" title="Correo electronico incorrecto" required>
-                
-                <label for="textarea"></label>
+
+                <label for="textarea" title="textarea"></label>
                 <textarea name="textarea" id="textarea" class = "cajasform" cols="30" rows="10" placeholder="Deja tu mensaje" disabled = "true" required></textarea>
                 <button id="btnenviar">Enviar</button>
                 <button id="btncontacto" onclick="document.getElementById('dialogo').show()">Datos contacto</button>
