@@ -20,7 +20,7 @@
         El navegador no soporta el audio
     </audio>
     <!-- Página principal -->
-    <a name = 'pagsuperior'></a>
+    <a name = 'pagsuperior' title="pagsuperior"></a>
     <div id="container-principal">
         <nav id="nav-contprin">
             <div id="container-logotipo">
@@ -33,26 +33,22 @@
                 <p>Frase del dia: <i>"No busques los errores, busca un remedio" - Henry Ford</i></p>
             </div>
             <div id="nav-enlaces" class="nav-enlaces">
-                <a class="enlaceprosup" href="#mis proyectos">Mis proyectos
+                <a class="enlaceprosup" href="#mis proyectos" title="proyectos">Mis proyectos
                     <span id="span1"></span>
                     <span id="span2"></span>
                 </a>
-                <a  class="enlaceprosup" href="#testimonios">Testimonios
+                <a  class="enlaceprosup" href="#testimonios" title="testimonios">Testimonios
                     <span id="span1"></span>
                     <span id="span2"></span>
                 </a>
-                <a  class="enlaceprosup" href="#contacto">Contacto
+                <a  class="enlaceprosup" href="#contacto" title="contacto">Contacto
                     <span id="span1"></span>
                     <span id="span2"></span>
                 </a>
-                <a  class="enlaceprosup" href="#sobre mi">Sobre mi
+                <a  class="enlaceprosup" href="#sobre mi" title="sobre mi">Sobre mi
                     <span id="span1"></span>
                     <span id="span2"></span>
                 </a>
-               <!--  <a class="enlaceprosup"  href="curriculum.html">CV
-                    <span id="span1"></span>
-                    <span id="span2"></span>
-                </a> -->
             </div>
         </nav>
         <div id="fondo">
@@ -75,8 +71,8 @@
                     </p>
                 </article>
                 <div id="btn-section-contprin">
-                    <a href="curriculum.html">Download CV</a>
-                    <a href="#sobre mi">Saber más...</a>
+                    <a href="curriculum.html" title="curriculum">Download CV</a>
+                    <a href="#sobre mi" title="sobremi">Saber más...</a>
                 </div>
             </section>
             <a class="far" href="#mis proyectos" title="icono flecha"><i class="far fa-arrow-alt-circle-down"></i></a>
@@ -89,25 +85,25 @@
     <!-- Mis proyectos -->
 <div id="container-envolvente">
     <aside class="nav-lateral">
-        <a  class="enlaceprosup" id="a-pro" href="#mis proyectos">Mis proyectos
+        <a  class="enlaceprosup" id="a-pro" href="#mis proyectos" title="proyectos">Mis proyectos
             <span id="span1"></span>
             <span id="span2"></span>
         </a>
-        <a  class="enlaceprosup" id="a-test" href="#testimonios">Testimonios
+        <a  class="enlaceprosup" id="a-test" href="#testimonios" title="testimonio">Testimonios
             <span id="span1"></span>
             <span id="span2"></span>
         </a>
-        <a  class="enlaceprosup"  id="a-sob" href="#sobre mi">Sobre mi
+        <a  class="enlaceprosup"  id="a-sob" href="#sobre mi" title="sobremi">Sobre mi
             <span id="span1"></span>
             <span id="span2"></span>
         </a>
-        <a  class="enlaceprosup" id = "a-cont" href="#contacto">Contacto
+        <a  class="enlaceprosup" id = "a-cont" href="#contacto" title="contacto">Contacto
             <span id="span1"></span>
             <span id="span2"></span>
         </a>
     </aside>
     <div id="tope">
-    <a name = 'mis proyectos'></a>
+    <a name = 'mis proyectos' title="proyectos"></a>
     <div id="container-proyectos">
 
         <main id="main-contpro">
@@ -123,7 +119,7 @@
                     compra para la venta de articulos donde el usuario podra realizar unas acciones como anñadir
                     productos,retirar productos ...
                 </p>
-                <a href="https://github.com/" id="a-pro1">Ver proyecto</a>
+                <a href="https://github.com/" id="a-pro1" title="ver proyecto">Ver proyecto</a>
             </div>
             <div id="proyecto2">
                 <picture id="picture-img-pro2">
@@ -136,7 +132,7 @@
                 <p id="p-pro2">Este proyecto fue diseñado con la finalidad de entretener al usuario, este juego consiste
                     en recibir una series de cartas que a medida que pasa la partida la iras coleccionando y gana el
                     jugador que la suma de todas sus cartas sea mayor.</p>
-                <a href="https://github.com/" id="a-pro2">Ver proyecto</a>
+                <a href="https://github.com/" id="a-pro2" title="ver proyecto">Ver proyecto</a>
             </div>
         </main>
         <a href="#pagsuperior" id="flechaUpFooter" title="icono flecha">
@@ -144,7 +140,7 @@
         </a>
     </div>
     <!-- TESTIMONIOS -->
-    <a name = 'testimonios'></a>
+    <a name = 'testimonios' title="testimonios"></a>
     <div id="container-testimonios">
 
         <main id="cuerpo-contest">
@@ -196,7 +192,7 @@
         </a>
     </div>
     <!-----SOBRE MI----->
-    <a name = 'sobre mi'></a>
+    <a name = 'sobre mi' title="sobremi"></a>
     <div id="container-sobremi">
 
         <main id="main-contsobremi">
@@ -221,7 +217,7 @@
         </a>
     </div>
     <!-------CONTACTO------->
-    <a name = 'contacto'></a>
+    <a name = 'contacto' title="contacto"></a>
     <div id="container-contacto">
         <main id="main-contacto">
             <div id="main-contact-left">
@@ -232,7 +228,7 @@
             <form id="main-contact-right">
                 <input type="text" name="nombre" id="nombre" aria-label="nombre" class = "cajasform" placeholder="Nombre" maxlength="20" required>
                 <input type="text" name="apellido" id="apellido" title="apellido" class = "cajasform" placeholder="Apellidos" maxlength="20" required>
-                <input type="email" name="email" id="email" title="email" class = "cajasform" placeholder="E-mail" pattern="^([\w\.\-_]+)?\w+@[\w-_]+(\.\w+){1,}$" title="Correo electronico incorrecto" required>
+                <input type="email" name="email" id="email"  class = "cajasform" placeholder="E-mail" pattern="^([\w\.\-_]+)?\w+@[\w-_]+(\.\w+){1,}$" title="Correo electronico incorrecto" required>
                 <textarea name="textarea" id="textarea" title="textarea" class = "cajasform" cols="30" rows="10" placeholder="Deja tu mensaje" disabled = "true" required></textarea>
                 <button id="btnenviar">Enviar</button>
                 <button id="btncontacto" onclick="document.getElementById('dialogo').show()">Datos contacto</button>
