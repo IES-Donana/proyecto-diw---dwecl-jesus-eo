@@ -20,14 +20,26 @@ button {
 }
 a {
     text-decoration: none;
-    color: rgba(21, 213, 166, 1);
+    color: rgb(21, 213, 166);
     font-family: 'roboto';
 }
 
 h1 {
     color: rgba(21, 213, 166, 1);
+    animation-name: titulo;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
    /*  font-variant: small-caps; */
 }
+
+@keyframes titulo {
+    0% {text-shadow: 0 0 0px rgba(255,255,255,.5), 0 0 0px rgba(255,255,255,.5), 0px 0px 0px rgba(206,89,55,0);}
+    50%  {text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5), 2px 2px 2px rgba(206,89,55,0);}
+    100% {
+        text-shadow: 0 0 0px rgba(255,255,255,.5), 0 0 0px rgba(255,255,255,.5), 0px 0px 0px rgba(206,89,55,0);
+    }
+}
+
 /*títulos páginas*/
 .titulo-test {
     font-size: 50px;
