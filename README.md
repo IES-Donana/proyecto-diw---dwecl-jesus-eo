@@ -32,21 +32,21 @@ Tendrá una navegación lateral que serán en laces a distintas partes de la pá
  https://www.figma.com/
 
 ## MODIFICACIONES A LA GUÍA DE ESTILOS<a name="id3"></a>
-He modificado la página principal y la de mis proyectos: he quitado los enlaces de dentro de los botones, he borrado los botones y he dejado sólo los enlaces para mejorar la visualización.
-En la parte de contacto, mis proyectos, sobre mi y testimonios he añadido una flecha que nos lleva a la página principal con el fin de facilitarle la navegación al usuario.
-En contacto he añadido un nuevo input llamado apellidos que es requerido por el usuario del proyecto.
-En el footer los iconos.
-El curriculum lo he cambiado totalmente por convenio con el usuario.
-He modificado el fondo del sitio web.
+- He modificado la página principal y la de mis proyectos: he quitado los enlaces de dentro de los botones, he borrado los botones y he dejado sólo los enlaces para mejorar la visualización.
+- En la parte de contacto, mis proyectos, sobre mi y testimonios he añadido una flecha que nos lleva a la página principal con el fin de facilitarle la navegación al usuario.
+- En contacto he añadido un nuevo input llamado apellidos que es requerido por el usuario del proyecto.
+- En el footer he añadido los iconos.
+- El curriculum lo he cambiado totalmente por convenio con el usuario.
+- He modificado el fondo del sitio web añadiendo a la paleta de colores utilizada un nuevo color.
 
 ## RECURSOS<a name="id4"></a>
 He usado las herramientas que nombro a continuación:
 
--Para los wireframe he utilizado : https://mockflow.com/
--Para los colore. https://color.adobe.com/es/create/color-wheel ,  https://coolors.co/s
--Para el sitemap: https://www.gloomaps.com/
--Para el prototipo: https://www.figma.com/file/4hagXdn2FxbFNzlilbGUU5/Mi-Portafolio?node-id=0%3A1
--Iconos: https://fonts.google.com/icons?preview.size=32
+- Para los wireframe he utilizado : https://mockflow.com/
+- Para los colore. https://color.adobe.com/es/create/color-wheel ,  https://coolors.co/s
+- Para el sitemap: https://www.gloomaps.com/
+- Para el prototipo: https://www.figma.com/file/4hagXdn2FxbFNzlilbGUU5/Mi-Portafolio?node-id=0%3A1
+- Iconos: https://fonts.google.com/icons?preview.size=32
 
 
 - Can I use?: https://caniuse.com/
