@@ -9,6 +9,7 @@ Para los títulos utilizar la clase class="titulo-test"*/
     /* overflow-y: hidden; */
    /* color: white;*/
 }
+
 body::-webkit-scrollbar { /*Da un warning en la validación no hay otra forma de poner esa propiedad*/
     width: 0px;
 }
