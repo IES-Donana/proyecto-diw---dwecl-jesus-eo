@@ -9,15 +9,18 @@ Para los títulos utilizar la clase class="titulo-test"*/
     /* overflow-y: hidden; */   
    /* color: white;*/
 }
+
 body::-webkit-scrollbar { /*Da un warning en la validación no hay otra forma de poner esa propiedad*/
     width: 0px;
 }
+
 /*---Etiquetas generales---*/
 button {
     border-radius: 40px;
     font-family: 'Roboto', sans-serif;
     opacity: 50%;
 }
+
 a {
     text-decoration: none;
     color: rgba(21, 213, 166, 1);
@@ -28,11 +31,13 @@ h1 {
     color: rgba(21, 213, 166, 1);
    /*  font-variant: small-caps; */
 }
+
 /*títulos páginas*/
 .titulo-test {
     font-size: 50px;
     font-family: 'bebas neue';
 }
+
 /*-Menu Lateral Para todas las páginas-*//**Efecto**/
 .nav-lateral {
     grid-column: 1/4;
@@ -44,6 +49,7 @@ h1 {
     background: rgba(69, 37, 122, 0.3);
     cursor: default;
 }
+
 .nav-lateral > a {
     border-bottom: 3px solid rgba(21, 213, 166, 1);
     padding-bottom: 10px;
