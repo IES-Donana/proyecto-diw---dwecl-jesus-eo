@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang='es'>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/ico" href="img/favicon.ico"><!-- Favicon -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+<link rel="stylesheet" href="css/style.css">
+<title>Mi portafolio</title>
+</head>
+
+<body>
+    <audio autoplay>
+        <source src="audio/bk-sound.mp3" type="audio/mpeg">
+        <source src="audio/bk-sound.ogg" type="audio/ogg">
+        El navegador no soporta el audio
+    </audio>
+    <!-- Página principal -->
+    <a name='pagsuperior' title="pagsuperior"></a>
+    <div id="container-principal">
+        <nav id="nav-contprin">
+            <div id="container-logotipo">
+                <object id="logo" data="img/dibujo4.svg" type="image/svg+xml"
+                    title="logo portafolio jesús manuel"></object>
+            </div>
+            <div id="container-burguer">
+                <i class="icono-burguer fas fa-bars"></i>
+            </div>
+            <div id="nav-frase">
+                <h1>PORTAFOLIO</h1>
+            </div>
+            
+            <div id="nav-enlaces" class="nav-enlaces">
+                <a class="enlaceprosup" href="#mis proyectos" title="proyectos" accesskey="p" tabindex="1">Mis proyectos
+                    <span class="span1" title="efecto"></span>
+                    <span class="span2" title="efecto"></span>
+                </a>
+                <a class="enlaceprosup" href="#testimonios" title="testimonios" accesskey="t" tabindex="2">Testimonios
+                    <span class="span1" title="efecto"></span>
+                    <span class="span2" title="efecto"></span>
+                </a>
+                <a class="enlaceprosup" href="#contacto" title="contacto" accesskey="c" tabindex="3">Contacto
+                    <span class="span1" title="efecto"></span>
+                    <span class="span2" title="efecto"></span>
+                </a>
+                <a class="enlaceprosup" href="#sobre mi" title="sobre mi" accesskey="s" tabindex="4">Sobre mi
+                    <span class="span1" title="efecto"></span>
+                    <span class="span2" title="efecto"></span>
+                </a>
+            </div>
+        </nav>
+        <div id="fondo">
+            <main id="cuerpo-contprin">
+                <picture id="picture-contprin">
+                    <source class="img-cuerpo-contprin" media="(max-width:640px )" srcset="img/imgp.jpg">
+                    <source class="img-cuerpo-contprin" media="(min-width:640px )" srcset="img/imgp.jpg">
+                    <img class="img-cuerpo-contprin" src="img/imgp.jpg" alt="imagen persolnal">
+                </picture>
+                <section id="section-contprin">
+                    <article>
+                        <p class="parrafo1-sect-contprin">Hola, Soy Jesús, un <span class="spanp1">Junior
+                                Developer</span>
+                            con ganas de aprender</p>
+                        <br>
+                        <p class="parrafo2-sect-contprin">Disfruto de ser desafiado y participar en proyectos que
+                            requieren
+                            que trabaje fuera de mi conjunto de conocimientos y comodidad, ya que continuar aprendiendo
+                            nuevas técnicas de desarrollo son importantes para mí y para el éxito de su organización.
+                            Me gusta actualizarme en las nuevas tecnologías de programación para poder implementarlas en
+                            mi
+                            día a día.
+                        </p>
+                    </article>
+                    <div id="btn-section-contprin">
+                        <a href="curriculum.html" title="curriculum">Download CV</a>
+                        <a href="#sobre mi" title="sobremi">Saber más...</a>
+                    </div>
+                </section>
+                <a class="far" href="#mis proyectos" title="Acceso a página principal">
+                    <i class="far fa-arrow-alt-circle-down"></i>
+                    <span class="lector-pantalla" hidden>Acceso a mis proyectos</span>
+                </a>
+                <div id="container-video">
+                    <video id="video-fondo" src="video/video fondo.mp4" muted autoplay loop></video>
+                </div>
+            </main>
+        </div>
+    </div>
+    <!-- Mis proyectos -->
+    <div id="container-envolvente">
+        <aside class="nav-lateral">
+            <a class="enlaceprosup" id="a-pro" href="#mis proyectos" title="proyectos">Mis proyectos
+                <span class="span1" title="efecto"></span>
+                <span class="span2" title="efecto"></span>
+            </a>
+            <a class="enlaceprosup" id="a-test" href="#testimonios" title="testimonio">Testimonios
+                <span class="span1" title="efecto"></span>
+                <span class="span2" title="efecto"></span>
+            </a>
+            <a class="enlaceprosup" id="a-sob" href="#sobre mi" title="sobremi">Sobre mi
+                <span class="span1" title="efecto"></span>
+                <span class="span2" title="efecto"></span>
+            </a>
+            <a class="enlaceprosup" id="a-cont" href="#contacto" title="contacto">Contacto
+                <span class="span1" title="efecto"></span>
+                <span class="span2" title="efecto"></span>
+            </a>
+        </aside>
+        <div id="tope">
+            <a name='mis proyectos' title="proyectos"></a>
+            <div id="container-proyectos">
+
+                <main id="main-contpro">
+                    <div id="proyecto1">
+                        <picture id="picture-img-pro1">
+                            <source class="img-pro1" media="(min-width:640px )" srcset="img/imgcarrito.jpeg">
+                            <source class="img-pro1" media="(max-width:640px )" srcset="img/proyecto-1-sm.jpeg">
+                            <img class="img-pro1" src="img/imgcarrito.jpeg" alt="Imagen carrito">
+                        </picture>
+
+                        <h3>Carrito de compra</h3>
+                        <p id="p-pro1">Es un proyecto el cual se puede usar en cualquier sitio web que necesite un
+                            carrito de
+                            compra para la venta de articulos donde el usuario podra realizar unas acciones como anñadir
+                            productos,retirar productos ...
+                        </p>
+                        <a href="https://github.com/" id="a-pro1" title="ver proyecto">Ver proyecto</a>
+                    </div>
+                    <div id="proyecto2">
+                        <picture id="picture-img-pro2">
+                            <source class="img-pro2" media="(min-width:640px )" srcset="img/imgcartas.jpeg">
+                            <source class="img-pro2" media="(max-width:640px )" srcset="img/proyecto-2-sm.jpeg">
+                            <img src="img/imgcartas.jpeg" alt="imagen cartas" class="img-pro2">
+                        </picture>
+
+                        <h3>Juego cartas</h3>
+                        <p id="p-pro2">Este proyecto fue diseñado con la finalidad de entretener al usuario, este juego
+                            consiste
+                            en recibir una series de cartas que a medida que pasa la partida la iras coleccionando y
+                            gana el
+                            jugador que la suma de todas sus cartas sea mayor.</p>
+                        <a href="https://github.com/" id="a-pro2" title="ver proyecto">Ver proyecto</a>
+                    </div>
+                </main>
+                <a href="#pagsuperior" class="flechaUpFooter" title="Acceso a página principal">
+                    <i class="far fa-arrow-alt-circle-up arrow-up"></i>
+                    <span class="lector-pantalla" hidden>Acceso a página principal</span>
+                </a>
+            </div>
+            <!-- TESTIMONIOS -->
+            <a name='testimonios' title="testimonios"></a>
+            <div id="container-testimonios">
+
+                <main id="cuerpo-contest">
+                    <div id="testimonio1">
+                        <picture id="picture-img-test1">
+                            <source class="img-test1" media="(min-width:640px )" srcset="img/directortest1.jpg">
+                            <source class="img-test1" media="(max-width:640px )" srcset="img/directortest1.jpg">
+                            <img src="img/directortest1.jpg" alt="Imagen testimonio1" class="img-test1">
+                        </picture>
+
+                        <p class="p-test">
+                            Siempre atento y amable, comprometido ha adaptarse a la necesidades de mi como cliente y con
+                            resultados más allá de lo que esperaba.
+                            Su servicio y su profesionalismo destacan de los demás, sin duda lo recomiendo ampliamente.
+                            <br><br>
+                            <span class="spn-test">Dario Lopez- Director empresa “Pinturas Lopez”</span>
+                        </p>
+                    </div>
+                    <div id="testimonio2">
+                        <picture id="picture-img-test2">
+                            <source class="img-test2" media="(min-width:640px )" srcset="img/directoratest2.jpg">
+                            <source class="img-test2" media="(max-width:640px )" srcset="img/directoratest2.jpg">
+                            <img src="img/directoratest2.jpg" alt="Imagen testimonio2" class="img-test2">
+                        </picture>
+
+                        <p class="p-test">
+                            Enhorabuena por tu proyecto y tu labor, Jesús. Te felicito de corazoón por haber tenido el
+                            valor de
+                            compartir tu viaje y convertirte en quien estabas destinado a ser.
+                            <br><br>
+                            <span class="spn-test">María Dominguez-Directora tienda “El ropero de María"</span>
+                        </p>
+                    </div>
+                    <div id="testimonio3">
+                        <video controls title="Video testimonio" class="video-test">
+                            <source src="video/Video testimonios.mp4" type="video/mp4">
+                            Su navegador no controla contenido multimedia
+                        </video>
+                        <p class="p-test">
+                            Muy profesional, gran confianza por el servicio y trato. Hemos estado siempre en contacto
+                            para
+                            resolver cualquier duda y sugerencia. Valoramos muchísimo su gran creatividad en cuanto al
+                            diseño de
+                            la web, hace que la tienda virtual sea de una gran calidad.
+                            <br>
+                            <span class="spn-test">Borja Vilaseca-director de “NeoAttack”</span>
+                        </p>
+                    </div>
+
+                </main>
+                <a href="#pagsuperior" class="flechaUpFooter" title="Acceso a página principal">
+                    <i class="far fa-arrow-alt-circle-up arrow-up"></i>
+                    <span class="lector-pantalla" hidden>Acceso a página principal</span>
+                </a>
+            </div>
+            <!-----SOBRE MI----->
+            <a name='sobre mi' title="sobremi"></a>
+            <div id="container-sobremi">
+
+                <main id="main-contsobremi">
+                    <div class="container-main-sobremi">
+                        <h3 class="h3-sobremi">Hobbies</h3>
+                        <p class="p-sobremi">Mi principal hobbie es el motocross con el cual disfruto de mi tiempo libre
+                            al igual que el ciclismo, también me gusta la ornitología y el contacto con el medio
+                            natural.
+                        </p>
+                    </div>
+                    <div class="container-main-sobremi">
+                        <h3 class="h3-sobremi">Objetivos</h3>
+                        <p class="p-sobremi">Mis objetivos son, mejorar mis cualidades como programador para llegar a
+                            ser un buen profesional y poder desarrollar ese potencial en una empresa.</p>
+                    </div>
+                    <div class="container-main-sobremi">
+                        <h3 class="h3-sobremi">1 Virtud, <br> 1 Defecto</h3>
+                        <p class="p-sobremi">Virtud: Me gusta trabajar en equipos de trabajo, lo cual me ayuda a ser una
+                            persona colaborativa y que tiene en cuenta la opinión de todos. <br>
+                            Defecto: Los nuevos proyectos me entusiasmaban y sin darme cuenta me sobrecargaba. Ahora he
+                            aprendido a reconocer mis límites.
+                        <p>
+                    </div>
+                </main>
+                <a href="#pagsuperior" class="flechaUpFooter" title="Acceso a página principal">
+                    <i class="far fa-arrow-alt-circle-up arrow-up"></i>
+                    <span class="lector-pantalla" hidden>Acceso a página principal</span>
+                </a>
+            </div>
+            <!-------CONTACTO------->
+            <a name='contacto' title="contacto"></a>
+            <div id="container-contacto">
+                <main id="main-contacto">
+                    <div id="main-contact-left">
+                        <img src="img/cd1c9a80364113.5cdec491b07d9.gif" alt="Robots" id="gif">
+                        <p id="p-left">Si deseas contactar conmigo para algún servicio o tienes dudas al respecto, no
+                            dudes en rellenar este formulario donde te ayudare en la medida de lo posible y te
+                            contestare en la mayor brevedad que pueda. <br>
+                            !Un saludo¡</p>
+                    </div>
+                    <form id="main-contact-right" action="index.html" method="get">
+                        <label for="nombre" hidden></label>
+                        <input type="text" name="nombre" id="nombre" aria-label="nombre" class="cajasform"
+                            placeholder="Nombre" maxlength="20" required>
+                        <label for="apellido" hidden></label>
+                        <input type="text" name="apellido" id="apellido" title="apellido" class="cajasform"
+                            placeholder="Apellidos" maxlength="20" required>
+                        <label for="email" hidden></label>
+                        <input type="email" name="email" id="email" class="cajasform" placeholder="E-mail"
+                            pattern="^([\w\.\-_]+)?\w+@[\w-_]+(\.\w+){1,}$" title="Correo electronico incorrecto"
+                            required>
+                        <label for="textarea" hidden></label>
+                        <textarea name="textarea" id="textarea" title="textarea" class="cajasform" cols="30" rows="10"
+                            placeholder="Deja tu mensaje" disabled="true" required></textarea>
+                        <button type="submit" id="btnenviar">Enviar</button>
+                        <button id="btncontacto" onclick="document.getElementById('dialogo').show()">Datos
+                            contacto</button>
+
+                    </form>
+
+                </main>
+                <a href="#pagsuperior" class="flechaUpFooter" title="Acceso a página principal">
+                    <i class="far fa-arrow-alt-circle-up arrow-up"></i>
+                    <span class="lector-pantalla" hidden>Acceso a página principal</span>
+                </a>
+            </div>
+
+        </div><!-- Tope -->
+    </div><!-- Container envolvente -->
+    <!---------FOOTER--------->
+
+    <div id="footer">
+        <div id="details-logo">
+            <details>
+                <summary>Logo animado:</summary>
+                <img id="img-details" src="img/Animacion.gif" alt="logo animado">
+            </details>
+        </div>
+        <a href="https://twitter.com/?lang=es" title="icono twitter"><i class="fab fa-twitter"
+                title="icono twitter"></i>
+            <span class="lector-pantalla" hidden>Icono twitter</span>
+        </a>
+        <a href="https://es-es.facebook.com/" title="icono facebook"><i class="fab fa-facebook-square"
+                title="icono facebook"></i>
+            <span class="lector-pantalla" hidden>Icono facebook</span>
+        </a>
+        <a href="https://www.instagram.com/?hl=es" title="icono instagram"><i class="fab fa-instagram"
+                title="icono instagram"></i>
+            <span class="lector-pantalla" hidden>Icono instagram</span>
+        </a>
+        <a href="https://github.com/" title="icono github"><i class="fab fa-github-square" title="icono github"></i>
+            <span class="lector-pantalla" hidden>Icono github</span>
+        </a>
+        <dialog id="dialogo">
+            <p>Email: jesusmanuel.espinar@iesdonana.org</p>
+            <p>Teléfono: 343434343</p>
+            <p>Sanlúcar de Barrameda - Cádiz</p>
+            <button id="close" onclick="document.getElementById('dialogo').close()">Cerrar</button>
+        </dialog>
+        <a href="http://www.w3.org/WAI/WCAG1A-Conformance" title="Explicación del Nivel A de Conformidad">
+            <img height="32" width="88" src="http://www.w3.org/WAI/wcag1A-blue" alt="Icono de conformidad con el Nivel A,
+	de las Directrices de Accesibilidad para
+	el Contenido Web 1.0 del W3C-WAI"></a>
+    </div>
+    <script src="proyecto.js"></script>
+</body>
+
+</html>
