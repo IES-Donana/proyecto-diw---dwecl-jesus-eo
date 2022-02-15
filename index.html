@@ -33,7 +33,7 @@
             <div id="nav-frase">
                 <h1>PORTAFOLIO</h1>
             </div>
-            
+
             <div id="nav-enlaces" class="nav-enlaces">
                 <a class="enlaceprosup" href="#mis proyectos" title="proyectos" accesskey="p" tabindex="1">Mis proyectos
                     <span class="span1" title="efecto"></span>
@@ -282,37 +282,55 @@
     <!---------FOOTER--------->
 
     <div id="footer">
-        <div id="details-logo">
-            <details>
-                <summary>Logo animado:</summary>
-                <img id="img-details" src="img/Animacion.gif" alt="logo animado">
-            </details>
+        <div id="enlaces-footer">
+            <div id="details-logo">
+                <details>
+                    <summary>Logo animado:</summary>
+                    <img id="img-details" src="img/Animacion.gif" alt="logo animado">
+                </details>
+            </div>
+            <a href="https://twitter.com/?lang=es" title="icono twitter"><i class="fab fa-twitter"
+                    title="icono twitter"></i>
+                <span class="lector-pantalla" hidden>Icono twitter</span>
+            </a>
+            <a href="https://es-es.facebook.com/" title="icono facebook"><i class="fab fa-facebook-square"
+                    title="icono facebook"></i>
+                <span class="lector-pantalla" hidden>Icono facebook</span>
+            </a>
+            <a href="https://www.instagram.com/?hl=es" title="icono instagram"><i class="fab fa-instagram"
+                    title="icono instagram"></i>
+                <span class="lector-pantalla" hidden>Icono instagram</span>
+            </a>
+            <a href="https://github.com/" title="icono github"><i class="fab fa-github-square" title="icono github"></i>
+                <span class="lector-pantalla" hidden>Icono github</span>
+            </a>
+            <dialog id="dialogo">
+                <p>Email: jesusmanuel.espinar@iesdonana.org</p>
+                <p>Teléfono: 343434343</p>
+                <p>Sanlúcar de Barrameda - Cádiz</p>
+                <button id="close" onclick="document.getElementById('dialogo').close()">Cerrar</button>
+            </dialog>
         </div>
-        <a href="https://twitter.com/?lang=es" title="icono twitter"><i class="fab fa-twitter"
-                title="icono twitter"></i>
-            <span class="lector-pantalla" hidden>Icono twitter</span>
-        </a>
-        <a href="https://es-es.facebook.com/" title="icono facebook"><i class="fab fa-facebook-square"
-                title="icono facebook"></i>
-            <span class="lector-pantalla" hidden>Icono facebook</span>
-        </a>
-        <a href="https://www.instagram.com/?hl=es" title="icono instagram"><i class="fab fa-instagram"
-                title="icono instagram"></i>
-            <span class="lector-pantalla" hidden>Icono instagram</span>
-        </a>
-        <a href="https://github.com/" title="icono github"><i class="fab fa-github-square" title="icono github"></i>
-            <span class="lector-pantalla" hidden>Icono github</span>
-        </a>
-        <dialog id="dialogo">
-            <p>Email: jesusmanuel.espinar@iesdonana.org</p>
-            <p>Teléfono: 343434343</p>
-            <p>Sanlúcar de Barrameda - Cádiz</p>
-            <button id="close" onclick="document.getElementById('dialogo').close()">Cerrar</button>
-        </dialog>
-        <a href="http://www.w3.org/WAI/WCAG1A-Conformance" title="Explicación del Nivel A de Conformidad">
-            <img height="32" width="88" src="http://www.w3.org/WAI/wcag1A-blue" alt="Icono de conformidad con el Nivel A,
-	de las Directrices de Accesibilidad para
-	el Contenido Web 1.0 del W3C-WAI"></a>
+
+        <div id="validaciones">
+            <div id="copyright">
+                © Copyright 2022 Portafolio Jesús Manuel Espinar Ocaña
+            </div>
+            <div id="val-accesibilidad">
+            <a href="http://www.w3.org/WAI/WCAG1AA-Conformance" title="Explicación del Nivel Doble-A de Conformidad">
+                <img height="32" width="88" src="http://www.w3.org/WAI/wcag1AA-blue" alt="Icono de conformidad con el Nivel Doble-A,
+	        de las Directrices de Accesibilidad para el Contenido Web 1.0 del W3C-WAI">
+            </a>
+        </div>
+        <div id="val-css">
+            <p>
+                <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                    <img style="border:0;width:88px;height:31px"
+                        src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="¡CSS Válido!" />
+                </a>
+            </p>
+        </div>
+        </div>
     </div>
     <script src="proyecto.js"></script>
 </body>
