@@ -1,0 +1,33 @@
+p {
+    color: black;
+}    
+
+h1 {
+    color: red;
+    font-size: 30px;
+}
+
+#video-fondo,
+ .far,
+ .nav-lateral,
+ #gif,
+ #main-contact-right,
+ #footer{
+    display: none;
+}
+
+#main-contact-left {
+    /* display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1,1fr);
+    */
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+#p-left {
+    grid-column: 2/10;
+    grid-row: 1/12;
+    font-family: 'roboto';
+    font-size: 20px;
+}
