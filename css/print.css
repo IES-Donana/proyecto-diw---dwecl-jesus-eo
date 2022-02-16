@@ -2,10 +2,6 @@ p {
     color: black;
 }    
 
-h1 {
-    color: red;
-    font-size: 30px;
-}
 
 #video-fondo,
  .far,
@@ -30,4 +26,7 @@ h1 {
     grid-row: 1/12;
     font-family: 'roboto';
     font-size: 20px;
+}
+a[href]:after {
+    content: "("attr(href)")";
 }
