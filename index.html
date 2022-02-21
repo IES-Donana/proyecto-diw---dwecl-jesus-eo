@@ -21,7 +21,6 @@
         El navegador no soporta el audio
     </audio>
     <!-- Página principal -->
-    <a name='pagsuperior' title="pagsuperior"></a>
     <div id="container-principal">
         <nav id="nav-contprin">
             <div id="container-logotipo">
@@ -36,19 +35,19 @@
             </div>
 
             <div id="nav-enlaces" class="nav-enlaces">
-                <a class="enlaceprosup" href="#misproyectos" title="proyectos" accesskey="p" tabindex="1">Mis proyectos
+                <a class="enlaceprosup" href="#container-proyectos" title="proyectos" accesskey="p" tabindex="1">Mis proyectos
                     <span class="span1" title="efecto"></span>
                     <span class="span2" title="efecto"></span>
                 </a>
-                <a class="enlaceprosup" href="#testimonios" title="testimonios" accesskey="t" tabindex="2">Testimonios
+                <a class="enlaceprosup" href="#container-testimonios" title="testimonios" accesskey="t" tabindex="2">Testimonios
                     <span class="span1" title="efecto"></span>
                     <span class="span2" title="efecto"></span>
                 </a>
-                <a class="enlaceprosup" href="#contacto" title="contacto" accesskey="c" tabindex="3">Contacto
+                <a class="enlaceprosup" href="#container-contacto" title="contacto" accesskey="c" tabindex="3">Contacto
                     <span class="span1" title="efecto"></span>
                     <span class="span2" title="efecto"></span>
                 </a>
-                <a class="enlaceprosup" href="#sobremi" title="sobre mi" accesskey="s" tabindex="4">Sobre mi
+                <a class="enlaceprosup" href="#container-sobremi" title="sobre mi" accesskey="s" tabindex="4">Sobre mi
                     <span class="span1" title="efecto"></span>
                     <span class="span2" title="efecto"></span>
                 </a>
@@ -78,10 +77,10 @@
                     </article>
                     <div id="btn-section-contprin">
                         <a href="curriculum.html" title="curriculum">Download CV</a>
-                        <a href="#sobremi" title="sobremi">Saber más...</a>
+                        <a href="#container-sobremi" title="sobremi">Saber más...</a>
                     </div>
                 </section>
-                <a class="far" href="#misproyectos" title="Acceso a página principal">
+                <a class="far" href="#container-proyectos" title="Acceso a página principal">
                     <i class="far fa-arrow-alt-circle-down"></i>
                     <span class="lector-pantalla" hidden>Acceso a mis proyectos</span>
                 </a>
@@ -94,28 +93,27 @@
     <!-- Mis proyectos -->
     <div id="container-envolvente">
         <aside class="nav-lateral">
-            <a class="enlaceprosup" id="a-pro" href="#misproyectos" title="proyectos">Mis proyectos
+            <a class="enlaceprosup" id="a-pro" href="#container-proyectos" title="proyectos">Mis proyectos
                 <span class="span1" title="efecto"></span>
                 <span class="span2" title="efecto"></span>
             </a>
-            <a class="enlaceprosup" id="a-test" href="#testimonios" title="testimonio">Testimonios
+            <a class="enlaceprosup" id="a-test" href="#container-testimonios" title="testimonio">Testimonios
                 <span class="span1" title="efecto"></span>
                 <span class="span2" title="efecto"></span>
             </a>
-            <a class="enlaceprosup" id="a-sob" href="#sobremi" title="sobremi">Sobre mi
+            <a class="enlaceprosup" id="a-sob" href="#container-sobremi" title="sobremi">Sobre mi
                 <span class="span1" title="efecto"></span>
                 <span class="span2" title="efecto"></span>
             </a>
-            <a class="enlaceprosup" id="a-cont" href="#contacto" title="contacto">Contacto
+            <a class="enlaceprosup" id="a-cont" href="#container-contacto" title="contacto">Contacto
                 <span class="span1" title="efecto"></span>
                 <span class="span2" title="efecto"></span>
             </a>
         </aside>
         <div id="tope">
-            <a name='misproyectos' title="proyectos"></a>
             <div id="container-proyectos">
 
-                <main id="main-contpro">
+                <div id="main-contpro">
                     <div id="proyecto1">
                         <picture id="picture-img-pro1">
                             <source class="img-pro1" media="(min-width:640px )" srcset="img/imgcarrito.jpeg">
@@ -146,17 +144,17 @@
                             jugador que la suma de todas sus cartas sea mayor.</p>
                         <a href="https://github.com/" id="a-pro2" title="ver proyecto">Ver proyecto</a>
                     </div>
-                </main>
-                <a href="#pagsuperior" class="flechaUpFooter" title="Acceso a página principal">
+                </div>
+                <a href="#container-principal" class="flechaUpFooter" title="Acceso a página principal">
                     <i class="far fa-arrow-alt-circle-up arrow-up"></i>
                     <span class="lector-pantalla" hidden>Acceso a página principal</span>
                 </a>
             </div>
             <!-- TESTIMONIOS -->
-            <a name='testimonios' title="testimonios"></a>
+            
             <div id="container-testimonios">
 
-                <main id="cuerpo-contest">
+                <div id="cuerpo-contest">
                     <div id="testimonio1">
                         <picture id="picture-img-test1">
                             <source class="img-test1" media="(min-width:640px )" srcset="img/directortest1.jpg">
@@ -203,17 +201,17 @@
                         </p>
                     </div>
 
-                </main>
-                <a href="#pagsuperior" class="flechaUpFooter" title="Acceso a página principal">
+                </div>
+                <a href="#container-principal" class="flechaUpFooter" title="Acceso a página principal">
                     <i class="far fa-arrow-alt-circle-up arrow-up"></i>
                     <span class="lector-pantalla" hidden>Acceso a página principal</span>
                 </a>
             </div>
-            <!-----SOBRE MI----->
-            <a name='sobremi' title="sobremi"></a>
+            <!--SOBRE MI-->
+            
             <div id="container-sobremi">
 
-                <main id="main-contsobremi">
+                <div id="main-contsobremi">
                     <div class="container-main-sobremi">
                         <h3 class="h3-sobremi">Hobbies</h3>
                         <p class="p-sobremi">Mi principal hobbie es el motocross con el cual disfruto de mi tiempo libre
@@ -234,16 +232,15 @@
                             aprendido a reconocer mis límites.
                         <p>
                     </div>
-                </main>
-                <a href="#pagsuperior" class="flechaUpFooter" title="Acceso a página principal">
+                </div>
+                <a href="#container-principal" class="flechaUpFooter" title="Acceso a página principal">
                     <i class="far fa-arrow-alt-circle-up arrow-up"></i>
                     <span class="lector-pantalla" hidden>Acceso a página principal</span>
                 </a>
             </div>
-            <!-------CONTACTO------->
-            <a name='contacto' title="contacto"></a>
+            <!--CONTACTO-->
             <div id="container-contacto">
-                <main id="main-contacto">
+                <div id="main-contacto">
                     <div id="main-contact-left">
                         <img src="img/cd1c9a80364113.5cdec491b07d9.gif" alt="Robots" id="gif">
                         <p id="p-left">Si deseas contactar conmigo para algún servicio o tienes dudas al respecto, no
@@ -264,15 +261,15 @@
                             required>
                         <label for="textarea" hidden></label>
                         <textarea name="textarea" id="textarea" title="textarea" class="cajasform" cols="30" rows="10"
-                            placeholder="Deja tu mensaje" disabled="true" required></textarea>
+                            placeholder="Deja tu mensaje" disabled required></textarea>
                         <button type="submit" id="btnenviar">Enviar</button>
                         <button id="btncontacto" onclick="document.getElementById('dialogo').show()">Datos
                             contacto</button>
 
                     </form>
 
-                </main>
-                <a href="#pagsuperior" class="flechaUpFooter" title="Acceso a página principal">
+                </div>
+                <a href="#container-principal" class="flechaUpFooter" title="Acceso a página principal">
                     <i class="far fa-arrow-alt-circle-up arrow-up"></i>
                     <span class="lector-pantalla" hidden>Acceso a página principal</span>
                 </a>
@@ -280,7 +277,7 @@
 
         </div><!-- Tope -->
     </div><!-- Container envolvente -->
-    <!---------FOOTER--------->
+    <!--FOOTER-->
 
     <div id="footer">
         <div id="enlaces-footer">
@@ -315,7 +312,7 @@
 
         <div id="validaciones">
             <div id="copyright">
-                16-02-2022 Portafolio Jesús Manuel Espinar Ocaña
+                28-02-2022 Portafolio Jesús Manuel Espinar Ocaña
             </div>
             <div id="val-accesibilidad">
             <a href="http://www.w3.org/WAI/WCAG1AA-Conformance" title="Explicación del Nivel Doble-A de Conformidad">

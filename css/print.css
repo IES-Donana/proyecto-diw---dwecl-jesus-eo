@@ -4,11 +4,12 @@ p {
 
 
 #video-fondo,
- .far,
- .nav-lateral,
- #gif,
- #main-contact-right,
- #footer{
+.far,
+.nav-lateral,
+#gif,
+#main-contact-right,
+#footer,
+.flechaUpFooter {
     display: none;
 }
 
@@ -29,4 +30,8 @@ p {
 }
 a[href]:after {
     content: "("attr(href)")";
+}
+
+#container-proyectos, #container-testimonios, #container-sobremi {
+    page-break-before: always;
 }
