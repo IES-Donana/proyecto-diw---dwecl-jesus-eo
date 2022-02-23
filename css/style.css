@@ -52,10 +52,34 @@ h1 {
     font-size: 50px;
     font-family: 'bebas neue';
 }
+/*Migas de pan página principal*/
+.breadcrumb {
+    background-color: black;
+}
+/*Migas de pan curriculum*/
+.breadcrumb-curriculum ul li { 
+    display: inline;
+    color: rgba(21, 213, 166, 1);;
+ } /* show list items horizontally */
+/* Put an angle bracket (>) between list items */
+.breadcrumb-curriculum ul li+li:before {
+ content: ">";
+ color: #FF9F55;
+ padding: 10px;  
+}
+ul li a:hover { 
+    text-decoration: underline; 
+    font-size: 18px;  
+    transition-duration: 1s;
+} 
+.breadcrumb-curriculum ul li a{ 
+    color: white;
+ } 
+ #titulo-cv {
+     text-align: center;
+ }
 /*-Menu Lateral Para todas las páginas-*//**Efecto**/
 .nav-lateral {
-   /*  grid-column: 1/4;
-    grid-row: 1/11; *************************************/
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -68,7 +92,7 @@ h1 {
     width: 80%;
 }
 #container-envolvente {
-    display: flex;/***********************************/
+    display: flex;
     background-color: rgb(34, 4, 61);
     background-image: url(intro.svg);
     background-repeat: no-repeat;
